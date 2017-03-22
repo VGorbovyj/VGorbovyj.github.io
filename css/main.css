@@ -612,6 +612,10 @@ li[class$="menu-list__item"] a:active {
 
 @media only screen and (min-width : 210px) {
     /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    .menu-icon,
+    nav {
+        display: inherit;
+    }
     body {
         background: rgb(232, 232, 232);
     }
@@ -767,10 +771,6 @@ li[class$="menu-list__item"] a:active {
 
 @media only screen and (min-width : 321px) {
     /** ЗАГАЛЬНЕ ПОЧАТОК **/
-    .menu-icon,
-    nav {
-        display: inherit;
-    }
     .wrapper {
         width: 90%;
         margin-left: 5%;
