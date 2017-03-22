@@ -732,10 +732,30 @@ li[class$="menu-list__item"] a:active {
         color: rgb(110, 69, 147);
         text-shadow: 1px 1px 1px rgba(33, 33, 33, .4);
     }
+    .box_content {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .skill_block {
+        width: 48%;
+        margin-left: 0;
+    }
+    .skill__image {
+        padding: 15px;
+    }
     .skill__title h2 {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 10px;
+        font-size: 14px;
     }
     /** КІНЕЦЬ НАВИКІВ **/
 
@@ -827,30 +847,10 @@ li[class$="menu-list__item"] a:active {
     }
 
     /** НАВИКИ ПОЧАТОК **/
-    .box_content {
-        width: 100%;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-            -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
-        -webkit-justify-content: space-between;
-                    -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-align-items: flex-start;
-                    -ms-flex-align: start;
-                align-items: flex-start;
-    }
-    .skill_block {
-        width: 48%;
-        margin-left: 0;
-    }
-    .skill__image {
-        padding: 15px;
-    }
-    .skill__title h2 {
-        font-size: 14px;
+        .skill__title h2 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     /** КІНЕЦЬ НАВИКІВ **/
     
