@@ -747,6 +747,9 @@ li[class$="menu-list__item"] a:active {
                     -ms-flex-align: start;
                 align-items: flex-start;
     }
+    .skills .box_content {
+        padding: 0 10px;
+    }
     .skill_block {
         width: 48%;
         margin-left: 0;
@@ -847,7 +850,10 @@ li[class$="menu-list__item"] a:active {
     }
 
     /** НАВИКИ ПОЧАТОК **/
-        .skill__title h2 {
+    .skills .box_content {
+        padding: 0;
+    }
+    .skill__title h2 {
         font-size: 18px;
         padding-left: 10px;
         padding-right: 10px;
