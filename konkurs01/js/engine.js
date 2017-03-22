@@ -1,0 +1,36 @@
+$('.abillity__icon-link__bad-environment').on('click',function(){
+    $('.hp-item-1').toggleClass('hide');
+    $('.abillity__icon-link__bad-environment').toggleClass('checked');
+    $('.game__center__human-body').toggleClass('lvl1');
+});
+$('.abillity__icon-link__smoking').on('click',function(){
+    $('.hp-item-2').toggleClass('hide');
+    $('.abillity__icon-link__smoking').toggleClass('checked');
+    $('.game__center__human-body').toggleClass('lvl3');
+});
+$('.abillity__icon-link__alcohol').on('click',function(){
+    $('.hp-item-3').toggleClass('hide');
+    $('.abillity__icon-link__alcohol').toggleClass('checked');
+    $('.game__center__human-body').toggleClass('lvl2');
+});
+$('.abillity__icon-link__drugs').on('click',function(){
+    $('.hp-item-4').toggleClass('hide');
+    $('.abillity__icon-link__drugs').toggleClass('checked');
+    $('.game__center__human-body').toggleClass('lvl4');
+});
+$('.abillity__icon-link__good-environment').on('click',function(){
+    $('.extra-hp-item-1').toggleClass('show');
+    $('.abillity__icon-link__good-environment').toggleClass('checked');
+});
+$('.abillity__icon-link__nutrition').on('click',function(){
+    $('.extra-hp-item-2').toggleClass('show');
+    $('.abillity__icon-link__nutrition').toggleClass('checked');
+});
+$('.abillity__icon-link__sport').on('click',function(){
+    $('.extra-hp-item-3').toggleClass('show');
+    $('.abillity__icon-link__sport').toggleClass('checked');
+});
+$('.abillity__icon-link__hygiene').on('click',function(){
+    $('.extra-hp-item-4').toggleClass('show');
+    $('.abillity__icon-link__hygiene').toggleClass('checked');
+});

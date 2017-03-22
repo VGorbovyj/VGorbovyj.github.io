@@ -1,0 +1,1587 @@
+/** ШРИФТИ ПОЧАТОК **/
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/** КІНЕЦЬ ШРИФТІВ **/
+
+/** ЗАГАЛЬНЕ ПОЧАТОК **/
+* {
+    transition: all .5s;
+    box-sizing: border-box;
+}
+html, 
+body {
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    font-family: "RobotoRegular";
+    color: rgb(33, 33, 33);
+}
+img,
+video,
+object,
+embed
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/** МЕНЮ ПОЧАТОК **/
+.menu-icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    margin: 0;
+    padding: 0.8rem 0.5rem;
+    background-color: rgba(33,33,33,.6);
+    cursor: pointer;
+    z-index: 30;
+}
+.menu-icon:hover {
+    opacity: 1;
+}
+div[class$="line-1"], div[class$="line-2"], div[class$="line-3"] {
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,.9);
+}
+div[class$="line-2"] {
+    margin: 3px 0;
+}
+.menu-magic > div[class$="line-1"] {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-magic > div[class$="line-2"] {
+    opacity: 0;
+}
+.menu-magic > div[class$="line-3"] {
+    -webkit-transform: rotate(-45deg) translate(3px, -4px);
+    -ms-transform: rotate(-45deg) translate(3px, -4px);
+        transform: rotate(-45deg) translate(3px, -4px);
+}
+nav {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+        -webkit-align-items: center;
+                align-items: center;
+    position: fixed;
+    top: 0;
+    left: -101vw;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    background: rgba(33,33,33,.8);
+    box-shadow: 0 0 4px rgba(00,00,00,.9);
+    z-index: 20;
+}
+.main-nav {
+    left: 0;
+}
+.main-nav h1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10%;
+    padding: 0 0.5rem;
+    padding-left: 4rem;
+    font-size: 2rem;
+    font-family: "RobotoBold";
+    color: rgb(245,245,245);
+    text-transform: uppercase;
+    background-color: rgba(33,33,33,.4);
+}
+ul[class$="menu-list"] {
+    width: 100%;
+    list-style: none;
+    line-height: 2.2;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+li[class$="menu-list__item"] {
+    width: 100%;
+    margin: 0.2rem 0;
+    padding: 0.2rem 0.4rem;
+    background-color: transparent;
+}
+li[class$="menu-list__item"] a {
+    color: rgb(245,245,245);
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: "RobotoMedium";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li[class$="menu-list__item"]:hover {
+    background: rgba(33, 33, 33, .8);
+}
+li[class$="menu-list__item"] a:hover {
+    padding-right: 2.5rem;
+    color: rgb(110, 69, 147);
+    text-shadow: 0 1px 1px rgb(33, 33, 33);
+}
+li[class$="menu-list__item"] a:active {
+    padding-left: 5.5rem;
+}
+/** КІНЕЦЬ МЕНЮ **/
+/** КІНЕЦЬ ЗАГАЛЬНОГО **/
+
+@media only screen and (max-width : 119px) {
+    body {
+        background: rgb(11, 11, 11);
+        font-size: 14px;
+    }
+    .intro {
+        border-top: 1px solid white;
+        margin-top: -4px;
+        background: white;
+    }
+    header h1,
+    header h2 {
+        font-size: 16px;
+        color: rgb(11, 11, 11);
+        text-align: center;
+        margin: 0;
+    }
+    .sry {
+        display: block;
+        padding: 0 5px;
+    }
+    .sry span {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 36px;
+    }
+    main,
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width : 120px) {
+    /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    *, 
+    h1, 
+    h2 {
+        font-size: 14px;
+    }
+    body {
+        background: rgb(11, 11, 11);
+    }
+    .menu-icon,
+    nav {
+        display: none;
+    }
+    /** КІНЕЦЬ ЗАГАЛЬНОГО **/
+    
+    /** ШАПКА ПОЧАТОК **/
+    header {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .intro_photo {
+        margin-bottom: 20px;
+    }
+    header h1, 
+    header h2 {
+        float: right;
+        width: 100%;
+        margin: 4px;
+        padding-right: 5px;
+        color: white;
+        text-align: right;
+        border-right: 2px solid white;
+    }
+    header h1 {
+        margin-bottom: 30px;
+    }
+    .sry {
+        display: none;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+
+    /** НАВИКИ ПОЧАТОК **/
+    .box {
+        width: 100%;
+        margin-top: 25px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+    .box_title {
+        width: 100%;
+        border-left: 4px solid white;
+        border-right: 4px solid white;
+    }
+    .box_title h1 {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 20px;
+        font-family: "RobotoBold";
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    .box_content {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .skill_block {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        margin-top: 20px;
+        border: 1px solid rgba(33, 33, 33, .05);
+    }
+    .skill_block:hover {
+        border: 1px solid rgba(33, 33, 33, .2);
+    }
+    .skill__image {
+        width: 100%;
+        height: auto;
+        background: white;
+        padding: 5px;
+    }
+    .skill__image img {
+        width: 100%;
+    }
+    .skill__title {
+        width: 100%;
+        height: auto;
+        background: rgb(33, 33, 33);
+    }
+    .skill__title h2 {
+        width: 100%;
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 14px;
+        font-family: "RobotoLight";
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+    
+    /** РОБОТИ ПОЧАТОК **/
+    .project_block {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding:  5px;
+    }
+    .project_poster {
+        width: 100%;
+        height: 80px;
+        border-top: 4px solid white;
+    }
+    .app_design_01 {
+        background: url(../img/posters/nimko_nails.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .fantastic_nails {
+        background: url(../img/posters/fantastic_nails.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .venomancer {
+        background: url(../img/posters/venomancer.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .night {
+        background: url(../img/posters/night.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .konkurs_01 {
+        background: url(../img/posters/konkurs_01.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .promo_01 {
+        background: url(../img/posters/ntu_khpi_od.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .gmkg {
+        background: url(../img/posters/gmkg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .project_description p {
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: rgb(11, 11, 11);
+        text-align: center;
+        background: white;
+    }
+    .main-text {
+        font-family: "RobotoBold";
+        font-size: 1rem;
+        color: rgb(11, 11, 11);
+        text-transform: uppercase; 
+    }
+    .project_view {
+        display: block;
+        width: 100%;
+        padding: 4px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: rgb(245, 160, 5);
+        border: none;
+        border-top: 1px solid rgba(33, 33, 33, .2);
+        outline: none;
+    }
+    .project_view:hover {
+        cursor: pointer;
+        background: rgb(110, 69, 147);
+        text-shadow: 0 1px 1px rgba(33, 33, 33, .6);   
+    }
+    .project_view:active {
+        color: rgb(33, 33, 33);
+        text-shadow: none;
+        transition: all .1s;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+    
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .year_block {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+    .year_block:hover > .year_number h1 {
+        background: rgb(110, 69, 147);
+    }
+    .year_number {
+        width: 100%;
+    }
+    .year_number h1 {
+        margin: 0;
+        padding: 2px 8px;
+        color: white;
+        text-align: left;
+        background: rgb(33, 33, 33);
+    }
+    .year_info {
+        width: 100%;
+        border-left: none;
+    }
+    .year_info p {
+        margin: 0;
+        padding: 10px 12px;
+        color: rgb(33, 33, 33);
+        background: white;
+    }
+    .year_info p a,
+    .year_info p abbr {
+        color: rgba(33, 33, 33, .8);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(245, 160, 5);
+    }
+    .year_info p a:hover,
+    .year_info p abbr:hover {
+        color: rgb(245, 160, 5);
+        border-bottom: 1px solid rgb(110, 69, 147);
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+    
+    /** ПІДВАЛ ПОЧАТОК **/    
+    footer {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                    justify-content: space-between;
+    }
+
+    /** КОНТАКТИ ПОЧАТОК **/ 
+    .contact_block {
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+            -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-align-items: flex-start;
+                        -ms-flex-align: start;
+                    align-items: flex-start;
+        background: white;
+    }
+    .gmail:hover .contact__image {
+        background: rgb(216, 55, 45);
+    }
+    .vk:hover .contact__image {
+        background: rgb(80, 114, 153);
+    }
+    .skype:hover .contact__image { 
+        background: rgb(0, 172, 236);
+    }
+    .contact__image {
+        display: none;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        background: rgb(33, 33, 33);
+    }    
+    .contact__image img {
+        width: 100%;
+    }
+    .contact__name {
+        width: 100%;
+        height: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+    .contact__name a {
+        display: block;
+        width: 100%;
+        color: rgb(33, 33, 33);
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .contact__name p {
+        width: 100%;
+        color: rgb(33, 33, 33, .8);
+        font-size: 10px;
+        text-align: center;
+        border-left: 1px solid rgb(33, 33, 33, .2);
+        border-right: 1px solid rgb(33, 33, 33, .2);
+    }
+    .contact__name a:hover {
+        color: white;
+    }
+    .gmail .contact__name a:hover {
+        background: rgb(216, 55, 45);
+    }
+    .vk .contact__name a:hover {
+        background: rgb(80, 114, 153);
+    }
+    .skype .contact__name a:hover { 
+        background: rgb(0, 172, 236);
+    }
+    /** КІНЕЦЬ КОНТАКТІВ **/
+    
+    /** ПОЧАТОК ПРАВ **/ 
+    .rights_block {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+        background: rgb(110, 69, 147);
+        -webkit-animation: bg-change 10s linear infinite alternate both;
+        animation: bg-change 10s linear infinite alternate both;
+    }
+    @-webkit-keyframes bg-change {
+        0% {
+            background: rgb(110, 69, 147);
+        }
+        100% {
+            background: rgb(245, 160, 5);
+        }
+    }
+    @keyframes bg-change {
+        0% {
+            background: rgb(110, 69, 147);
+        }
+        100% {
+            background: rgb(245, 160, 5);
+        }
+    }
+    .rights_block img {
+        padding: 10px 0;
+    }
+    .rights_block ul {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center;
+        list-style-type: none;
+        background: white;
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 210px) {
+    /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    body {
+        background: rgb(232, 232, 232);
+    }
+    .wrapper {
+        width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    /** КІНЕЦЬ ЗАГАЛЬНОГО **/
+    
+    /** ШАПКА ПОЧАТОК **/
+    header h2, 
+    header h1 {
+        float: none;
+        width: auto;
+        margin: none;
+        border-right: none;
+    }
+    header h1 {
+        margin-bottom: 30px;
+    }
+    header {
+        width: 100%;
+        padding: 0;
+        background: transparent;
+    }
+    .intro_photo {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        background: rgb(245, 160, 5);
+    }
+    .intro_photo img {
+        width: 160px;
+        height: 160px;
+        border: 6px solid rgb(232, 232, 232);
+        background-size: cover;
+        -webkit-transform: rotateZ(10deg);
+            -ms-transform: rotateZ(10deg);
+                transform: rotateZ(10deg);
+    }
+    .intro {
+        margin-top: 30px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-align-items: flex-end;
+                    -ms-flex-align: end;
+                align-items: flex-end;
+    }
+    .name,
+    .surname,
+    .who_am_i {
+        width: 100%;
+    }
+    .name h2,
+    .surname h2,
+    .who_am_i h1 {
+        float: right;
+        margin: 10px 0;
+        padding: 2px 5px;
+        font-size: 16px;
+        font-family: "RobotoMedium";
+        text-transform: uppercase;
+        background: rgb(245, 160, 5);
+        border-right: 4px solid white;
+        box-shadow: 1px 0 2px rgba(33, 33, 33, .2);
+    }
+    .who_am_i h1 {
+        box-shadow: -1px 0 2px rgba(33, 33, 33, .2);
+    }
+    .who_am_i > h1 {
+        display: inline-block;
+        float: left;
+        background: rgb(110, 69, 147);
+        border-right: none;
+        border-left: 4px solid white;
+    }
+    div[class^="triangle"] {
+        display: inline-block;
+        margin-top: 10px;
+        width: 0; 
+        height: 0;
+    }
+    div[class$="left"] {
+        float: right;
+        border-left: 26px solid transparent;
+        border-right: 26px solid rgb(245, 160, 5);
+        border-bottom: 26px solid transparent;
+    }
+    div[class$="right"] {
+        border-left: 26px solid rgb(110, 69, 147);
+        border-right: 26px solid transparent;
+        border-bottom: 26px solid transparent;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+    
+    /** НАВИКИ ПОЧАТОК **/
+    .box_title {
+        background: white;
+        border-left: 4px solid rgb(110, 69, 147);
+        border-right: 4px solid rgb(110, 69, 147);
+        box-shadow: 0 1px 2px rgba(33, 33, 33, .4);
+    }
+    .box_title h1 {
+        font-size: 36px;
+        color: rgb(110, 69, 147);
+        text-shadow: 1px 1px 1px rgba(33, 33, 33, .4);
+    }
+    .skill__title h2 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+
+    /** РОБОТИ ПОЧАТОК **/
+    .project_block {
+        padding: 0 10px;
+    }
+    .project_poster {
+        height: 120px;
+    }
+    .project_description p {
+        font-size: 16px;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+    
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .year_block {
+        padding: 0 10px;
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+    
+    /** ПІДВАЛ ПОЧАТОК **/
+    .contact__name p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .contacts .box_content,
+    .copyrights .box_content {
+        padding: 0 10px;
+    }
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 321px) {
+    /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    .menu-icon,
+    nav {
+        display: inherit;
+    }
+    .wrapper {
+        width: 90%;
+        margin-left: 5%;
+        padding: 30px 0;
+    }
+    /** КІНЕЦЬ ЗАГАЛЬНОГО **/
+    
+    /** ШАПКА ПОЧАТОК **/
+    .intro_photo {
+        width: 200px;
+        height: 200px;
+    }
+    .intro_photo img {
+        width: 200px;
+        height: 200px;
+    }
+    .intro {
+        margin-top: 45px;
+    }
+    .name h2,
+    .surname h2,
+    .who_am_i h1 {
+        font-size: 20px;
+    }
+    .who_am_i > h1 {
+        font-size: 22px;
+    }
+    div[class$="left"] {
+        border-left: 31px solid transparent;
+        border-right: 31px solid rgb(245, 160, 5);
+        border-bottom: 31px solid transparent;
+    }
+    div[class$="right"] {
+        border-left: 34px solid rgb(110, 69, 147);
+        border-right: 34px solid transparent;
+        border-bottom: 34px solid transparent;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+    
+    main {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+
+    /** НАВИКИ ПОЧАТОК **/
+    .box_content {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .skill_block {
+        width: 48%;
+        margin-left: 0;
+    }
+    .skill__image {
+        padding: 15px;
+    }
+    .skill__title h2 {
+        font-size: 14px;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+    
+    /** РОБОТИ ПОЧАТОК **/
+    .project_block {
+        padding: 0;
+    }
+    .project_poster {
+        height: 180px;
+    }
+    .project_block:hover {
+        box-shadow: 0 1px 2px rgba(33, 33, 33, .4);
+    }
+    .project_description p {
+        font-size: 18px;
+    }
+    .main-text {
+        font-size: 1.2rem;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+    
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .year_block {
+        padding: 0;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .year_block:hover > .year_info {
+        border-left: 2px solid rgb(110, 69, 147);
+        box-shadow: 1px 1px 2px rgba(33, 33, 33, .4);
+    }
+    .year_number {
+        width: 15%;
+    }
+    .year_info {
+        width: 85%;
+        border-left: 2px solid rgb(33, 33, 33);
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+    
+    /** ПІДВАЛ ПОЧАТОК **/
+    /** КОНТАКТИ ПОЧАТОК **/
+    .contacts .box_content,
+    .copyrights .box_content {
+        padding: 0;
+    }
+    .contact_block {
+        height: auto;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-align-items: flex-start;
+                        -ms-flex-align: start;
+                    align-items: flex-start;
+    }
+    .contact__image {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }    
+    .contact__image img {
+        height: 60px;
+    }
+    .contact__name {
+        width: 100%;
+        height: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+    .contact__name a {
+        display: none;
+    }
+    .contact__name p {
+        width: 80%;
+    }
+    /** КОНТАКТИ КІНЕЦЬ **/
+    
+    /** ПОЧАТОК ПРАВ **/
+    .rights_block img {
+        height: 140px;
+        width: 140px;
+        margin: 0 auto;
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 481px) {
+    /** ШАПКА ПОЧАТОК **/
+    .intro {
+        margin-top: 60px;
+    }
+    .name h2,
+    .surname h2,
+    .who_am_i h1 {
+        font-size: 26px;
+    }
+    .who_am_i > h1 {
+        font-size: 28px;
+    }
+    div[class^="triangle"] {
+        display: inline-block;
+        margin-top: 10px;
+        width: 0; 
+        height: 0;
+    }
+    div[class$="left"] {
+        float: right;
+        border-left: 40px solid transparent;
+        border-right: 40px solid rgb(245, 160, 5);
+        border-bottom: 40px solid transparent;
+    }
+    div[class$="right"] {
+        border-left: 42px solid rgb(110, 69, 147);
+        border-right: 42px solid transparent;
+        border-bottom: 42px solid transparent;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+    
+    /** НАВИКИ ПОЧАТОК **/
+    .skills .box_content {
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .skill_block {
+        width: 32%;
+        height: auto;
+        margin-top: 20px;
+        margin-right: 2%;
+        border: 1px solid rgba(33, 33, 33, .05);
+    }
+    .skill_block:nth-child(3n) {
+        margin-right: 0;
+    }
+    .skill__title h2 {
+        font-size: 14px;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+
+    /** РОБОТИ ПОЧАТОК **/
+    .project_block {
+        width: 48%;
+    }
+    .main-text {
+        font-size: 1.1rem;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .year_number h1 {
+        font-size: 18px;
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+    
+    /** ПІДВАЛ ПОЧАТОК **/
+    /** КОНТАКТИ ПОЧАТОК **/
+    .contact_block {
+        height: auto;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: center;
+                    -ms-flex-align: center;
+                align-items: center;
+    }
+    .contact__name p {
+        width: 92%;
+    }
+    /** КОНТАКТИ КІНЕЦЬ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+@media only screen and (min-width : 600px) {
+
+    /** ШАПКА ПОЧАТОК **/
+    header {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+            -webkit-justify-content: flex-start;
+                        -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-align-items: flex-start;
+                        -ms-flex-align: start;
+                    align-items: flex-start;
+    }
+    .intro {
+        width: 60%;
+        margin-top: 0;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .name h2,
+    .surname h2,
+    .who_am_i h1 {
+        padding: 5px 15px;
+    }
+    .who_am_i > h1 {
+        float: right;
+        margin-top: 70px;
+        border-right: 4px solid white;
+        box-shadow: 0 1px 2px rgba(33, 33, 33, .4);
+    }
+    .intro h2 {
+        margin: 0;
+        box-shadow: none;
+    }
+    .surname {
+        margin-top: -10px;
+    }
+    .surname h2 {
+        padding-left: 9.6px;
+    }
+    div[class^="triangle"] {
+        margin-top: 0;
+    }
+    .triangle-right {
+        opacity: 0;
+    }
+    div[class$="left"] {
+        border-left: 46px solid transparent;
+        border-right: 46px solid rgb(245, 160, 5);
+        border-bottom: 46px solid transparent;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .year_info:after {
+        content: "\25a0";
+        display: block;
+        margin: 0 auto;
+        margin-bottom: -10px;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+    .year_block:last-child .year_info:after {
+        content: none;
+    }
+    .year_block:last-child {
+        margin-bottom: 10px;
+    }
+    .year_block:hover .year_info {
+        box-shadow: none;
+        border-left: none;
+    }
+    .year_info {
+        border-left: none;
+    }
+    .year_block:hover .year_info section {
+        box-shadow: 1px 1px 2px rgba(33, 33, 33, .4);
+    }
+    .year_number h1 {
+        padding: 15px 10px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .skill__title h2 {
+        font-size: 16px;
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+
+    /** ПІДВАЛ ПОЧАТОК **/
+    /** КОНТАКТИ ПОЧАТОК **/
+    .contact__image {
+        width: 50%;
+    }
+    .contact__name a {
+        display: block;
+        pointer-events: inherit;
+    }
+    .contact__name p {
+        width: 80%;
+    }
+    /** КОНТАКТИ КІНЕЦЬ **/
+
+    /** ПОЧАТОК ПРАВ **/
+    .rights_block {
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .rights_block img {
+        padding: 10px;
+    }
+    .rights_block ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        color: white;
+    }
+    .rights_block ul li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 769px) { 
+    /** РОБОТИ ПОЧАТОК **/
+    .skill_block:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .skill_block:nth-child(4n) {
+        margin-right: 0;
+    }
+    .skills .skill_block,
+    .future-skills .skill_block {
+        width: 23.5%;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+
+    /** ПІДВАЛ ПОЧАТОК **/
+    footer {
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    /** КОНТАКТИ ПОЧАТОК **/ 
+    .contacts {
+        width: 48%;
+    }
+    .contact__image {
+        width: 30%;
+    }
+    /** КІНЕЦЬ КОНТАКТІВ **/
+
+    /** ПОЧАТОК ПРАВ **/
+    .copyrights {
+        width: 48%;
+    }
+    .rights_block {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 20px;
+    }
+    .rights_block li {
+        font-family: "RobotoMedium";
+        font-size: 20px;
+    }
+    .rights_block ul {
+        padding: 5px 10px;
+    }
+    .rights_block ul li:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+    .rights_block img {
+        height: 235px;
+        width: 235px;
+        margin: 0 auto;
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 992px) {
+    nav {
+        width: 20vw;
+    }
+    main {
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    /** НАВИКИ ПОЧАТОК **/
+    .skills {
+        width: 66%;
+    }
+    .future-skills {
+        width: 30%;
+    }
+    .box_content {
+        -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .skills .skill_block {
+        width: 22.3%;
+        margin-right: 3.6%;
+    }
+    .skills .skill_block:nth-child(3n) {
+        margin-right: 3.6%;
+    }
+    .skills .skill_block:nth-child(4n) {
+        margin-right: 0;
+    }
+    .skill_block:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    .skill__title h2 {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+    .future-skills .box_content {
+        -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .future-skills .skill_block {
+        width: 49%;
+        margin-left: 0;
+    }
+    .future-skills .skill_block:nth-child(even) {
+        margin-right: 0;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+
+    /** РОБОТИ ПОЧАТОК **/
+    .project_block {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .project_block:nth-child(3n) {
+        margin-right: 0;
+    }
+    .project_block:last-child {
+        margin-right: 0;
+    }
+    .year_block:first-child {
+        margin-top: 30px;
+    }
+    /** КІНЕЦЬ РОБІТ **/
+
+    /** ПІДВАЛ ПОЧАТОК **/
+    /** КОНТАКТИ ПОЧАТОК **/ 
+    .contacts {
+        width: 48%;
+        margin-right: 4%;
+    }
+    /** КІНЕЦЬ КОНТАКТІВ **/
+
+    /** ПОЧАТОК ПРАВ **/
+    .rights_block {
+        padding: 15px;
+    }
+    .rights_block img {
+        width: 245px;
+        height: 245px;
+    }
+    .rights_block img:hover {
+        -webkit-animation: speed-pic 0.6s ease-in-out both;
+        animation: speed-pic 0.6s ease-in-out both;
+    } 
+    @-webkit-keyframes speed-pic {
+        0% {
+            -webkit-transform: rotatez(0deg);
+                -ms-transform: rotatez(0deg);
+                    transform: rotatez(0deg);
+        }
+        100% {
+            -webkit-transform: rotatez(360deg);
+                -ms-transform: rotatez(360deg);
+                    transform: rotatez(360deg);
+        }
+    }
+    @keyframes speed-pic {
+        0% {
+            -webkit-transform: rotatez(0deg);
+                -ms-transform: rotatez(0deg);
+                    transform: rotatez(0deg);
+        }
+        100% {
+            -webkit-transform: rotatez(360deg);
+                -ms-transform: rotatez(360deg);
+                    transform: rotatez(360deg);
+        }
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
+
+@media only screen and (min-width : 1200px) {
+    /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    body {
+        background: url(../img/back.jpg);
+        -webkit-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    /** КІНЕЦЬ ЗАГАЛЬНОГО **/
+
+    /** ШАПКА ПОЧАТОК **/
+    header {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .intro_photo {
+        background: rgba(33, 33, 33, .8);
+    }
+    .intro_photo img {
+        border-color: white;
+    }
+    .intro {
+        width: 35%;
+        height: 200px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: flex-end;
+                    -ms-flex-align: end;
+                align-items: flex-end;
+    }
+    .name,
+    .surname,
+    .who_am_i {
+        width: 85.5%;
+    }
+    .name h2,
+    .surname h2,
+    .who_am_i h1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 32px;
+        font-family: "RobotoLight";
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        background: rgba(33, 33, 33, .8);
+        border: none;
+        text-shadow: 0 2px 1px rgba(33, 33, 33, .4);
+    }
+    .name h2 {
+        border-top: 2px solid white;
+    }
+    .name h2,
+    .surname h2 {
+        padding: 5px;
+        letter-spacing: 4px;
+        text-shadow: 0 2px 1px rgba(11, 11, 11, .8);
+    }
+    .surname h2 {
+        margin-top: 10px;
+    }
+    .who_am_i h1 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 28px;
+        font-family: "RobotoBold";
+        color: white;
+        background: rgba(110, 69, 147, .4);
+        text-transform: uppercase;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 2px solid white;
+    }
+    div[class^="triangle"] {
+        display: none;
+    }
+    /** КІНЕЦЬ ШАПКИ **/
+
+    /** НАВИКИ ПОЧАТОК **/
+    .skills .skill_block {
+        width: 20.8%;
+        margin-right: 5.6%;
+    }
+    .skills .skill_block:nth-child(3n) {
+        margin-right: 5.6%;
+    }
+    /** КІНЕЦЬ НАВИКІВ **/
+
+    /** БІОГРАФІЯ ПОЧАТОК **/
+    .box_title {
+        background: rgba(110, 69, 147, .2);
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 2px solid white;
+        box-shadow: none;
+    }
+    .box_title h1 {
+        font-size: 36px;
+        text-align: left;
+        padding-left: 10px;
+        color: white;
+        text-shadow: 0 2px 1px rgba(33, 33, 33, .4);
+    }
+    .box_content {
+        padding: 20px;
+        padding-top: 0;
+        background: rgba(33, 33, 33, .2);
+        border-bottom: 2px solid white;
+        box-shadow: 0 1px 2px rgba(33, 33, 33, .4);
+    }
+    .year_block {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .year_number h1 {
+        width: 100%;
+        display: block;
+        color: white;
+        background: rgb(245, 160, 5);
+        border-top: 2px solid white;
+    }
+    .year_info {
+        width: 100%;
+    }
+    .year_info section {
+        border-bottom: 2px solid rgb(245, 160, 5);
+    }
+    .year_block:hover .year_info section {
+        border-bottom: 2px solid rgb(110, 69, 147);
+    }
+    .year_info p,
+    .year_info p b {
+        font-size: 18px;
+    }
+    .year_info p a,
+    .year_info p abbr {
+        font-size: 18px;
+    }
+    .year_info:after {
+        display: none;
+    }
+    /** КІНЕЦЬ БІОГРАФІЇ **/
+
+    /** ПІДВАЛ ПОЧАТОК **/
+    /** КОНТАКТИ ПОЧАТОК **/ 
+    .contacts .box_content {
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .contact_block {
+        width: 30%;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .contact__image {
+        width: 100%;
+    }
+    .contact__name p {
+        width: 86%;
+        font-size: 11px;
+    }
+    /** КІНЕЦЬ КОНТАКТІВ **/
+
+    /** ПОЧАТОК ПРАВ **/
+    .copyrights .box_content {
+        padding: 18.5px;
+        padding-top: 0;
+    }
+    .rights_block {
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .rights_block img {
+        width: 140px;
+        height: 140px;
+    }
+    .rights_block ul {
+        width: 65%;
+        border-left: 1px solid rgba(33, 33, 33, .2);
+    }
+    /** КІНЕЦЬ ПРАВ **/
+    /** ПІДВАЛ КІНЕЦЬ **/
+}
