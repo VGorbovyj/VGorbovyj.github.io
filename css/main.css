@@ -747,7 +747,8 @@ li[class$="menu-list__item"] a:active {
                     -ms-flex-align: start;
                 align-items: flex-start;
     }
-    .skills .box_content {
+    .skills .box_content,
+    .future-skills .box_content {
         padding: 0 10px;
     }
     .skill_block {
@@ -850,7 +851,8 @@ li[class$="menu-list__item"] a:active {
     }
 
     /** НАВИКИ ПОЧАТОК **/
-    .skills .box_content {
+    .skills .box_content,
+    .future-skills .box_content {
         padding: 0;
     }
     .skill__title h2 {
