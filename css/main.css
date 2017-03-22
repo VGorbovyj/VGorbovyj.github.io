@@ -684,7 +684,7 @@ li[class$="menu-list__item"] a:active {
         float: right;
         margin: 10px 0;
         padding: 2px 5px;
-        font-size: 16px;
+        font-size: 22px;
         font-family: "RobotoMedium";
         text-transform: uppercase;
         background: rgb(245, 160, 5);
@@ -692,6 +692,7 @@ li[class$="menu-list__item"] a:active {
         box-shadow: 1px 0 2px rgba(33, 33, 33, .2);
     }
     .who_am_i h1 {
+        font-size: 20px;
         box-shadow: -1px 0 2px rgba(33, 33, 33, .2);
     }
     .who_am_i > h1 {
@@ -709,14 +710,14 @@ li[class$="menu-list__item"] a:active {
     }
     div[class$="left"] {
         float: right;
-        border-left: 26px solid transparent;
-        border-right: 26px solid rgb(245, 160, 5);
-        border-bottom: 26px solid transparent;
+        border-left: 34px solid transparent;
+        border-right: 34px solid rgb(245, 160, 5);
+        border-bottom: 34px solid transparent;
     }
     div[class$="right"] {
-        border-left: 26px solid rgb(110, 69, 147);
-        border-right: 26px solid transparent;
-        border-bottom: 26px solid transparent;
+        border-left: 31px solid rgb(110, 69, 147);
+        border-right: 31px solid transparent;
+        border-bottom: 31px solid transparent;
     }
     /** КІНЕЦЬ ШАПКИ **/
     
@@ -818,15 +819,15 @@ li[class$="menu-list__item"] a:active {
     .name h2,
     .surname h2,
     .who_am_i h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .who_am_i > h1 {
         font-size: 22px;
     }
     div[class$="left"] {
-        border-left: 31px solid transparent;
-        border-right: 31px solid rgb(245, 160, 5);
-        border-bottom: 31px solid transparent;
+        border-left: 36px solid transparent;
+        border-right: 36px solid rgb(245, 160, 5);
+        border-bottom: 36px solid transparent;
     }
     div[class$="right"] {
         border-left: 34px solid rgb(110, 69, 147);
@@ -852,9 +853,12 @@ li[class$="menu-list__item"] a:active {
     }
 
     /** НАВИКИ ПОЧАТОК **/
-
+    .skills .box_content,
+    .future-skills .box_content {
+        padding: 20px 0;
+    }
     .skill__title h2 {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1503,6 +1507,11 @@ li[class$="menu-list__item"] a:active {
         padding-left: 10px;
         color: white;
         text-shadow: 0 2px 1px rgba(33, 33, 33, .4);
+    }
+    .skills .box_content,
+    .future-skills .box_content {
+        padding: 20px;
+        padding-top: 0;
     }
     .box_content {
         padding: 20px;
