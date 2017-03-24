@@ -1385,6 +1385,9 @@ li[class$="menu-list__item"] a:active {
 
 @media only screen and (min-width : 1200px) {
     /** ЗАГАЛЬНЕ ПОЧАТОК **/
+    li[class$="menu-list__item"] a {
+        color: white;
+    }
     body {
         background: url(../img/back.jpg);
         -webkit-background-size: cover;
@@ -1512,6 +1515,21 @@ li[class$="menu-list__item"] a:active {
     .future-skills .box_content {
         padding: 20px;
         padding-top: 0;
+    }
+    .skill_block {
+        border: none;
+    }
+    .skill_block:hover {
+        border: none;
+    }
+    .skill__image {
+        background: rgba(255, 255, 255, .1);    
+    }
+    .skill__image:hover {
+        background: rgba(255, 255, 255, .4);    
+    }
+    .skill__title  {
+        background: rgba(33, 33, 33, .6);
     }
     .box_content {
         padding: 20px;
