@@ -59,7 +59,9 @@ embed
     max-width: 100%;
     height: auto;
 }
-
+.video {
+    display: none;
+}
 /** МЕНЮ ПОЧАТОК **/
 .menu-icon {
     position: fixed;
@@ -1384,6 +1386,17 @@ li[class$="menu-list__item"] a:active {
 }
 
 @media only screen and (min-width : 1200px) {
+    .video {
+        display: inherit;
+        position: fixed;
+        top: 50%; left: 50%;
+        z-index: -2;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+    }
     /** ЗАГАЛЬНЕ ПОЧАТОК **/
     li[class$="menu-list__item"] a {
         color: white;
