@@ -368,6 +368,10 @@ li[class$="menu-list__item"] a:active {
         background: url(../img/posters/gmkg.jpg) no-repeat center;
         background-size: cover;
     }
+    .simple_landing {
+        background: url(../img/posters/simple_landing.jpg) no-repeat center;
+        background-size: cover;
+    }
     .project_description p {
         margin: 0;
         padding: 10px 15px;
