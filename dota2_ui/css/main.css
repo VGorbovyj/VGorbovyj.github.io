@@ -27,6 +27,8 @@ body {
   cursor: url("../cursor/default.png"), progress !important;
   margin: 0;
   padding: 0;
+  background: -webkit-radial-gradient(#525b63, #252628);
+  background-background: radial-gradient(#525b63, #252628);
 }
 
 a {
@@ -60,13 +62,6 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-iframe {
-  width: 500px;
-  height: 60vh;
-  overflow: hidden;
-  box-shadow: 0 1px 4px rgba(11, 11, 11, 0.8);
 }
 
 .main-part {
@@ -310,26 +305,48 @@ iframe {
 }
 
 .text-part {
-  position: absolute;
-  top: 84px;
-  right: 100px;
+  position: fixed;
+  top: 13vh;
+  right: 10vw;
+  box-shadow: 0 1px 6px rgba(11, 30, 31, 0.8);
+}
+
+.scroll-style {
+  width: 520px;
+  height: 80vh;
+  overflow: auto;
+  background: linear-gradient(to top, rgba(8, 22, 23, 0.8) 60%, rgba(52, 114, 139, 0.6));
+}
+
+.scroll-style::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  background-color: #26575c;
+  border: 1px solid #3d878e;
 }
 
 .text {
-  width: 480px;
-  height: auto;
+  width: 100%;
+  min-height: 500px;
+  padding: 5px 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url(../img/emblem.svg), linear-gradient(to top, rgba(8, 22, 23, 0.8) 60%, rgba(52, 114, 139, 0.6));
-  background-repeat: no-repeat;
+  background: url(../img/emblem.svg);
   background-attachment: fixed;
-  background-size: 100%;
-  background-position: center;
+  background-position: 2%;
 }
 
 .text .item_intro {
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -371,11 +388,13 @@ iframe {
 }
 
 .text p {
+  width: 100%;
   color: #b2bfc0;
   font-style: italic;
 }
 
 .text h3 {
+  width: 100%;
   color: #7ca09d;
   font-weight: 400;
   text-transform: uppercase;
@@ -389,6 +408,7 @@ iframe {
 }
 
 .text .set_info {
+  width: 100%;
   list-style-type: square;
   padding-left: 20px;
   margin: 15px 0;
@@ -529,4 +549,115 @@ iframe {
   margin-left: 10px;
   border: none;
   border-radius: 0;
+}
+
+.heroes-block .heroes-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+}
+
+.heroes-block .heroes-line .fraction {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.heroes-block .heroes-line .fraction:first-child {
+  margin-top: 0;
+}
+
+.heroes-block .heroes-line .fraction .title {
+  display: flex;
+  flex: 4;
+  background: red;
+}
+
+.heroes-block .heroes-line .str::before,
+.heroes-block .heroes-line .agi::before,
+.heroes-block .heroes-line .int::before {
+  content: 'Сила';
+  width: 156px;
+  margin-top: 80px;
+  margin-left: -156px;
+  padding-bottom: 6px;
+  color: #737c83;
+  text-align: center;
+  border-bottom: 1px solid #737c83;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.heroes-block .heroes-line .agi::before {
+  content: 'Спритність';
+}
+
+.heroes-block .heroes-line .int::before {
+  content: 'Інтелект';
+}
+
+.heroes-block .heroes-line .hero-box {
+  float: left;
+  width: 44px;
+  height: 140px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 5;
+}
+
+.heroes-block .heroes-line .hero-box img {
+  width: 100%;
+  border: 1px solid #0b0b0b;
+  box-shadow: 0 1px 2px rgba(33, 33, 33, 0.8);
+  opacity: .75;
+}
+
+.heroes-block .heroes-line .hero-box img:last-of-type {
+  display: none;
+  opacity: 0;
+}
+
+.heroes-block .heroes-line .hero-box h3 {
+  display: none;
+  margin: 0;
+  margin-top: -36px;
+  height: 36px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  background: rgba(33, 33, 33, 0.4);
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(11, 11, 11, 0.8);
+}
+
+.heroes-block .heroes-line .hero-box:hover {
+  transform: translateY(-25px);
+  z-index: 10;
+}
+
+.heroes-block .heroes-line .hero-box:hover img:first-of-type {
+  display: none;
+}
+
+.heroes-block .heroes-line .hero-box:hover img:last-of-type {
+  display: block;
+  width: 100px;
+  height: 140px;
+  opacity: 1;
+}
+
+.heroes-block .heroes-line .hero-box:hover h3 {
+  display: block;
+  width: 100px;
 }
