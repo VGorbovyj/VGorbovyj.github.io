@@ -372,6 +372,10 @@ li[class$="menu-list__item"] a:active {
         background: url(../img/posters/simple_landing.jpg) no-repeat center;
         background-size: cover;
     }
+    .dota2_ui {
+        background: url(../img/posters/dota2_ui.jpg) no-repeat center;
+        background-size: cover;
+    }
     .project_description p {
         margin: 0;
         padding: 10px 15px;
