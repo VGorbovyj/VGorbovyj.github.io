@@ -894,6 +894,7 @@ footer .row h4 span {
   }
   .content div p {
     width: 70vw;
+    height: auto;
     margin: 0 auto;
     margin-top: 10px;
   }
