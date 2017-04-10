@@ -378,6 +378,7 @@ main .skills-list li:last-child::after {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  height: 100%;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -861,6 +862,7 @@ footer .row h4 span {
     -webkit-flex-direction: column !important;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
+    height: 100vh;
   }
 }
 
@@ -894,8 +896,9 @@ footer .row h4 span {
     margin: 0 auto;
     margin-top: 10px !important;
   }
-  .content .selected {
+  .selected {
     display: block !important;
+    height: 100% !important;
     opacity: 1 !important;
     z-index: 10;
     background: white !important;
