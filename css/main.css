@@ -526,16 +526,16 @@ footer .row h4 span {
 
 .to-the-top a {
   display: block;
-  padding: 20px;
+  padding: 5px;
   color: transparent;
-  font-size: 2em;
-  line-height: 1.2em;
+  font-size: 6em;
+  line-height: 3em;
   text-align: left;
   background: #1c1c1c;
   border: none;
 }
 
-.to-the-top a::before {
+.to-the-top::before {
   content: '|';
   display: block;
   float: left;
@@ -546,7 +546,7 @@ footer .row h4 span {
   font-weight: 400;
 }
 
-.to-the-top a::after {
+.to-the-top::after {
   content: '|';
   display: block;
   float: right;
