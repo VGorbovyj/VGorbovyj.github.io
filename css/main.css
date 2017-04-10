@@ -526,24 +526,12 @@ footer .row h4 span {
   z-index: 10;
 }
 
-.to-the-top a {
-  display: block;
-  width: 44px;
-  height: 44px;
-  color: transparent;
-  font-size: 44px;
-  line-height: 22px;
-  text-align: center;
-  border: none;
-  z-index: 15;
-}
-
 .to-the-top::before {
   content: '|';
   display: block;
   float: left;
-  margin-top: -22px;
-  margin-left: 5px;
+  margin-top: -25px;
+  margin-left: 2px;
   color: #85ac5b;
   font-size: 2em;
   font-weight: 400;
@@ -553,27 +541,28 @@ footer .row h4 span {
   content: '|';
   display: block;
   float: right;
-  margin-top: -26px;
-  margin-right: 5px;
+  margin-top: 18px;
+  margin-right: 2px;
   color: #85ac5b;
   font-size: 2em;
   font-weight: 400;
 }
 
 .to-the-top:hover {
+  cursor: pointer;
   box-shadow: 0 0 2px rgba(28, 28, 28, 0.8);
 }
 
 .to-the-top:hover::before {
-  -webkit-transform: translateY(40px);
-  -ms-transform: translateY(40px);
-  transform: translateY(40px);
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
 }
 
 .to-the-top:hover::after {
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  transform: translateY(-40px);
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
 }
 
 .to-the-top:active {
