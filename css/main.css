@@ -520,18 +520,19 @@ footer .row h4 span {
   position: fixed;
   bottom: 5em;
   right: 1em;
+  width: 44px;
+  height: 44px;
   background: #1c1c1c;
   z-index: 10;
 }
 
 .to-the-top a {
   display: block;
-  padding: 5px;
+  padding-left: 15px;
   color: transparent;
-  font-size: 6em;
-  line-height: 3em;
+  font-size: 2em;
+  line-height: 1.2em;
   text-align: left;
-  background: #1c1c1c;
   border: none;
 }
 
@@ -540,7 +541,7 @@ footer .row h4 span {
   display: block;
   float: left;
   margin-top: -22px;
-  margin-left: 2px;
+  margin-left: 5px;
   color: #85ac5b;
   font-size: 2em;
   font-weight: 400;
@@ -551,7 +552,7 @@ footer .row h4 span {
   display: block;
   float: right;
   margin-top: -26px;
-  margin-right: 2px;
+  margin-right: 5px;
   color: #85ac5b;
   font-size: 2em;
   font-weight: 400;
