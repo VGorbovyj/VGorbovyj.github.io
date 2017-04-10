@@ -528,9 +528,11 @@ footer .row h4 span {
 
 .to-the-top a {
   display: block;
+  width: 44px;
+  height: 44px;
   color: transparent;
-  font-size: 2em;
-  line-height: 1.2em;
+  font-size: 44px;
+  line-height: 1;
   text-align: center;
   border: none;
   z-index: 15;
