@@ -520,19 +520,20 @@ footer .row h4 span {
   position: fixed;
   bottom: 5em;
   right: 1em;
+  width: 44px;
+  height: 44px;
+  background: #1c1c1c;
   z-index: 10;
 }
 
 .to-the-top a {
   display: block;
-  width: 44px;
-  height: 44px;
   color: transparent;
   font-size: 2em;
   line-height: 1.2em;
-  text-align: left;
-  background: #1c1c1c;
+  text-align: center;
   border: none;
+  z-index: 15;
 }
 
 .to-the-top::before {
