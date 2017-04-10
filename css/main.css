@@ -401,8 +401,7 @@ main .skills-list li:last-child::after {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
-  z-index: 5;
+  display: none;
 }
 
 .content div p {
@@ -413,17 +412,7 @@ main .skills-list li:last-child::after {
 
 .content .selected {
   position: inherit;
-  height: 100%;
-  opacity: 1;
-  z-index: 10;
-  -webkit-animation-name: tab;
-  animation-name: tab;
-  -webkit-animation-duration: .05s;
-  animation-duration: .05s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  display: block;
 }
 
 .contacts {
@@ -862,7 +851,7 @@ footer .row h4 span {
     -webkit-flex-direction: column !important;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -894,14 +883,11 @@ footer .row h4 span {
   .content div p {
     width: 70vw;
     margin: 0 auto;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
   }
   .selected {
-    display: block !important;
     height: 100% !important;
     opacity: 1 !important;
-    z-index: 10;
-    background: white !important;
   }
   .contacts {
     -webkit-flex-direction: column !important;
