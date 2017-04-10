@@ -896,11 +896,6 @@ footer .row h4 span {
     width: 70vw;
     margin: 20px auto;
   }
-  .part {
-    display: flex;
-    height: 100%;
-    padding: 20px;
-  }
   .content .selected {
     display: block;
     z-index: 10;
