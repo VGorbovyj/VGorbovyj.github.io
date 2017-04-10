@@ -397,6 +397,7 @@ main .skills-list li:last-child::after {
   align-items: flex-start;
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -405,6 +406,7 @@ main .skills-list li:last-child::after {
 
 .content div p {
   width: 100%;
+  height: 100%;
   font-size: 1em;
 }
 
