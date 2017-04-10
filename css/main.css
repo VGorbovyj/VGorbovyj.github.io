@@ -526,13 +526,10 @@ footer .row h4 span {
   z-index: 10;
 }
 
-.to-the-top a {
+.to-the-top a img {
   display: block;
   width: 44px;
   height: 44px;
-  color: transparent;
-  font-size: 44px;
-  line-height: 1;
   text-align: center;
   border: none;
   z-index: 15;
