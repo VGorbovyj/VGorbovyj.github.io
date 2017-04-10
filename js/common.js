@@ -32,7 +32,7 @@ $(document).ready(function(){
 				$('.to-the-top').fadeOut();
 			}
 		});
-		$('.to-the-top a').click(function () {
+		$('.to-the-top').click(function () {
 			$('body,html').animate({
 				scrollTop: 0
 			}, 1200);
