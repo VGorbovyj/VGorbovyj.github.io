@@ -894,10 +894,12 @@ footer .row h4 span {
   }
   .content div p {
     width: 70vw;
-    height: 100vh;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 20px auto;
+  }
+  .part {
+    display: flex;
+    height: 100%;
+    padding: 20px;
   }
   .content .selected {
     display: block;
