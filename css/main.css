@@ -535,7 +535,7 @@ footer .row h4 span {
   border: none;
 }
 
-.to-the-top::before {
+.to-the-top a::before {
   content: '|';
   display: block;
   float: left;
@@ -546,7 +546,7 @@ footer .row h4 span {
   font-weight: 400;
 }
 
-.to-the-top::after {
+.to-the-top a::after {
   content: '|';
   display: block;
   float: right;
