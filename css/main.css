@@ -719,8 +719,17 @@ footer .row h4 span {
   .navigation li a {
     padding: 4px 6px;
   }
+  .content div {
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  .content .selected {
+    display: block;
+  }
   .content div p {
     width: 70vw;
+    height: 100%
     margin: 0 auto;
     margin-top: 10px;
   }
