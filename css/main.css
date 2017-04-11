@@ -573,7 +573,7 @@ footer .row h4 span {
 
 .projects .project-box .description p a {
   display: inline;
-  float: none;
+  float: none !important;
 }
 
 .projects .project-box .description h1 {
