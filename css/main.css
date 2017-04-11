@@ -571,6 +571,10 @@ footer .row h4 span {
   text-align: center;
 }
 
+.projects .project-box .description p a {
+  display: inline;
+}
+
 .projects .project-box .description h1 {
   width: 100%;
 }
