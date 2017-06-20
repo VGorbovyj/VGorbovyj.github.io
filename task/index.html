@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="uk"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="uk"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<!--<![endif]-->
+<html lang="uk">
+<head>
+<meta charset=utf-8>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
+<script src="https://use.fontawesome.com/2cec688563.js"></script>
+<link href="css/bootstrap-grid-3.3.1.min.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+	<!--ВЕРХНЯ ПАНЕЛЬ ШАПКИ. ПОЧАТОК-->
+		<div class="container-fluid topPannel">
+			<div class="row">
+				<ul class="col-md-9 topPannel__leftNav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="col-md-3 topPannel__rightMenu">
+					<li><a href="#">Help<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="topPannel__rightMenu__subMenu">
+							<li><a href="#">Chat</a></li>
+							<li><a href="#">Call</a></li>
+						</ul>
+					</li>
+					<li><a href="#">English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="topPannel__rightMenu__subMenu">
+							<li><a href="#">Russian</a></li>
+							<li><a href="#">Ukrainian</a></li>
+						</ul>
+					</li>
+					<li><a href="#">USD<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="topPannel__rightMenu__subMenu">
+							<li><a href="#">RUB</a></li>
+							<li><a href="#">UAH</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="topPannel__rightMenu_active"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="topPannel__rightMenu__subMenu">
+							<li><a href="#"><i class="fa fa-user-times" aria-hidden="true"></i></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="topPannel__rightMenu__subMenu">
+							<li><a href="#"><i class="fa fa-unlock-alt" aria-hidden="true"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!--ВЕРХНЯ ПАНЕЛЬ ШАПКИ. КІНЕЦЬ-->
+	<!--РЯД ПІД ПАНЕЛЛЮ. ПОЧАТОК-->
+		<div class="container-fluid middlePannel">
+			<div class="row">
+				<div class="col-md-3 logoBlock">
+					<a href="#"><img src="img/logo.svg" alt="Logotype"><span>Kiosk</span></a>
+				</div>
+				<div class="col-md-7 searchForm">
+					<div class="col-md-5 searchForm__categories">
+						<ul class="categoriesMenu">
+							<li><i class="fa fa-list-ul" aria-hidden="true"></i><a href="#" class="preCategory">Select a category<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+								<ul class="categoriesMenu__subMenu">
+									<li><a href="#">First category</a></li>
+									<li><a href="#">Second category</a></li>
+									<li><a href="#">Third category</a></li>
+									<li><a href="#">Etc.</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-7 searchForm__searchProducts">
+						<form action="" method="post" class="searchForm__searchProducts__form">
+						  <input type="search" name="" placeholder="Search products..." class="input" />
+						  <button type="submit" name="" value="" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2 myChart">
+					<a href="#"><span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>
+					0 Item-$0.00</a>
+				</div>
+			</div>
+		</div>
+<!--РЯД ПІД ПАНЕЛЛЮ. ПОЧАТОК-->
+</header>
+
+<main class="mainSection">
+	<div class="container-fluid mainMenu">
+		<div class="row">
+		<!--ЛІВА КОЛОНКА. ПОЧАТОК-->
+			<div class="col-md-3 leftBar">
+			<!--МЕНЮ ГАМБУРГЕР. ПОЧАТОК-->
+				<button onclick="showNavi()"; class="mainMenu__megaMenu__button">Mega menu<i class="fa fa-bars" aria-hidden="true"></i></button>
+				<ul class="mainMenu__megaMenu" id="mainMenu__megaMenu">
+					<li class="mainMenu__megaMenu_hover"><span><i class="fa fa-headphones" aria-hidden="true"></i></span><a href="#">Headphone<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+						<div class="megaMenu__subMenu__back">
+							<ul class="megaMenu__subMenu__categories">
+								<h1>CAMCORDERS</h1>
+								<li><a href="#">Apple</a></li>
+								<li><a href="#">HTC</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+								<li><a href="#">Nokia</a></li>
+								<li><a href="#">Motorola</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+							</ul>
+							<ul class="megaMenu__subMenu__categories">
+								<h1>CAMCORDERS</h1>
+								<li><a href="#">Apple</a></li>
+								<li><a href="#">HTC</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+								<li><a href="#">Nokia</a></li>
+								<li><a href="#">Motorola</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+							</ul>
+							<ul class="megaMenu__subMenu__categories">
+								<h1>CAMCORDERS</h1>
+								<li><a href="#">Apple</a></li>
+								<li><a href="#">HTC</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+								<li><a href="#">Nokia</a></li>
+								<li><a href="#">Motorola</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">BlackBerry</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><span class="shoes icon"></span><a href="#">Shoes<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="accessories icon"></span><a href="#">Accessories<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="cases icon"></span><a href="#">Cases &amp; Covers<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="tablet icon"></span><a href="#">Tablet Accessories<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="topBrands icon"></span><a href="#">Top Brands<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="computer icon"></span><a href="#">Computer<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+					<li><span class="offer icon"></span><a href="#">Offer</a></li>
+					<li><span class="menFashion icon"></span><a href="#">Men's Fashion</a></li>
+					<li><span class="womenFashion icon"></span><a href="#">Women's Fashion</a></li>
+					<li><span class="kids icon"></span><a href="#">Kids</a></li>
+				</ul>
+			<!--МЕНЮ ГАМБУРГЕР. КІНЕЦЬ-->
+
+			<!--ПОСЛУГИ. ПОЧАТОК-->
+				<section class="threeOption">
+					<div class="optionCase">
+						<span><i class="fa fa-truck" aria-hidden="true"></i></span>
+						<ul class="optionCase__description">
+							<li>Free Shipping</li>
+							<li>all order</li>
+						</ul>
+					</div>
+					<div class="optionCase">
+						<span><i class="fa fa-headphones" aria-hidden="true"></i></span>
+						<ul class="optionCase__description">
+							<li>24/7 customer</li>
+							<li>services</li>
+						</ul>
+					</div>
+					<div class="optionCase">
+						<span><i class="fa fa-reply-all" aria-hidden="true"></i></span>
+						<ul class="optionCase__description">
+							<li>money back</li>
+							<li>guarantee</li>
+						</ul>
+					</div>
+				</section>
+			<!--ПОСЛУГИ. КІНЕЦЬ-->
+			
+			<!--ПЕРШИЙ БЛОК РЕКЛАМИ. ПОЧАТОК-->
+				<section class="ads">
+					<a href="#"><div class="ads__overlay__color"></div>
+					<ul class="ads__description">
+						<li>Exclusive Fashion For Women</li>
+						<li>sunglass and cap</li>
+					</ul>
+					</a>
+					<span class="adShape"><a href="#">45</a></span>
+				</section>
+			<!--ПЕРШИЙ БЛОК РЕКЛАМИ. КІНЕЦЬ-->
+
+			<!--БЛОКИ ПРОПОЗИЦІЙ. ПОЧАТОК-->
+				<section class="dealsGroup">
+					<div class="dealsGroup__title">
+						<h1>Hot deals</h1>
+						<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/thor.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/widow.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/hawkeye.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/scarletWitch.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section class="dealsGroup">
+					<div class="dealsGroup__title">
+						<h1>Best Offers</h1>
+						<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/thor.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/widow.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/hawkeye.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+					<div class="dealCase">
+						<img src="img/avengers/scarletWitch.jpg" alt="Model Preview">
+						<ul class="dealCase__description">
+							<li class="productName">Headphone</li>
+							<li class="productPrice">$350.00</li>
+							<li class="starsRate">
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							</li>
+							<li class="buyButton"><a href="#">add to cart</a></li>
+						</ul>
+					</div>
+
+				</section>
+			<!--БЛОКИ ПРОПОЗИЦІЙ. КІНЕЦЬ-->
+
+			<!--ДРУГИЙ БЛОК РЕКЛАМИ. ПОЧАТОК-->
+				<section class="adsMore">
+					<a href="#">
+					<div class="adsMore__overlay__color"></div>
+					<ul class="adsMore__description">
+						<li>Fashion</li>
+						<li>Collection</li>
+					</ul>
+					</a>
+				</section>
+			<!--ДРУГИЙ БЛОК РЕКЛАМИ. КІНЕЦЬ-->
+			</div>
+		<!--ЛІВА КОЛОНКА. КІНЕЦЬ-->
+
+		<!--ПРАВА КОЛОНКА /ГОЛОВНА. ПОЧАТОК-->
+			<div class="col-md-9 rightBar">
+			<!--ДОДАТКОВЕ МЕНЮ. ПОЧАТОК-->
+				<ul class="mainMenu__navigation">
+					<li><a href="#" class="mainMenu__navigation_active">Home</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Footwear</a></li>
+					<li><a href="#">Jewellery</a></li>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			<!--ДОДАТКОВЕ МЕНЮ. КІНЕЦЬ-->
+
+			<!--СЛАЙДЕР. ПОЧАТОК-->
+				<div class="slider">
+					<div class="slider__box">
+
+						<div class="item">
+			        <ul class="itemDescription">
+			        	<li><span>big fashion</span> offer</li>
+			        	<li>get 75% off on sale</li>
+			        	<li><a href="#">shop now</a></li>
+			        </ul>
+			        <div class="sliderOverlay">
+			        	<div class="darkTriangle"></div>
+			        </div>
+			        <div class="sliderOverlay">
+			        	<div class="coloredTriangle"></div>
+			        </div>
+			        <img src="img/sliderImg/vision.jpg" alt="Vision">
+			      </div>
+						<div class="item">
+			        <ul class="itemDescription">
+			        	<li><span>big fashion</span> offer</li>
+			        	<li>get 25% off on sale</li>
+			        	<li><a href="#">shop now</a></li>
+			        </ul>
+			        <div class="sliderOverlay">
+			        	<div class="darkTriangle"></div>
+			        </div>
+			        <div class="sliderOverlay">
+			        	<div class="coloredTriangle"></div>
+			        </div>
+			        <img src="img/sliderImg/ultron.jpg" alt="Ultron">
+			      </div>
+						<div class="item">
+			        <ul class="itemDescription">
+			        	<li><span>big fashion</span> offer</li>
+			        	<li>get 60% off on sale</li>
+			        	<li><a href="#">shop now</a></li>
+			        </ul>
+			        <div class="sliderOverlay">
+			        	<div class="darkTriangle"></div>
+			        </div>
+			        <div class="sliderOverlay">
+			        	<div class="coloredTriangle"></div>
+			        </div>
+			        <img src="img/sliderImg/tanos.jpg" alt="Tanos">
+			      </div>
+
+					</div>
+			    
+			    <div class="slider__nav">
+			      <span class="nav nav__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+			      <span class="nav nav__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+			    </div>
+			    
+				</div>
+			<!--СЛАЙДЕР. КІНЕЦЬ-->
+
+			<!--ПЕРШИЙ РЯД РЕКЛАМИ. ПОЧАТОК-->
+				<div class="mainSection__ads_first">
+					<div class="col-md-9 bigSizeAd">
+						<h1>Sunglass</h1>
+						<h2>new year collection</h2>
+						<a href="#">shop now</a>
+					</div>
+					<div class="col-md-3 smallSizeAd">
+						<h1>sale</h1>
+						<h2>30%</h2>
+						<a href="#">shop now</a>
+					</div>
+				</div>
+			<!--ПЕРШИЙ РЯД РЕКЛАМИ. КІНЕЦЬ-->
+
+			<!--БЛОК ТОВАРІВ /ТАБИ. ПОЧАТОК-->
+				<div class="col-md-12 topSeller">
+					<ul class="topSeller__navigation">
+						<li><a class="tab_1_leb active" href="#top_seller">top seller</a></li>
+						<li><a class="tab_2_leb" href="#top_rated">top rated</a></li>
+						<li><a class="tab_3_leb" href="#featured">featured</a></li>
+						<li>
+							<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<section class="topSeller__products">
+						<div class="tab_1_con selected">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/aquaman.png" alt="Aquaman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/wonder.png" alt="Wonder Woman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/harley.png" alt="Harley">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/scarlet.png" alt="Scarlet Witch">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/antman.png" alt="Antman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/batman.png" alt="Batman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab_2_con">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/harley.png" alt="Harley">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/scarlet.png" alt="Scarlet Witch">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/antman.png" alt="Antman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/batman.png" alt="Batman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab_3_con">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/wonder.png" alt="Wonder Woman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/scarlet.png" alt="Scarlet Witch">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/antman.png" alt="Antman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			<!--БЛОК ТОВАРІВ /ТАБИ. КІНЕЦЬ-->
+
+			<!--ДРУГИЙ РЯД РЕКЛАМИ. ПОЧАТОК-->
+				<div class="col-md-12 mainSection__ads_second">
+					<div class="col-md-6 mediumSizeAd">
+						<a href="#">
+							<h1>great offers!</h1>
+							<h1>get up to 70% off</h1>
+							<h2>cap's fashion shields collection</h2>
+						</a>
+					</div>
+
+					<div class="col-md-6 mediumSizeAd">
+						<a href="#">
+							<h1>hot deals!</h1>
+							<h1>get up to 40% off</h1>
+							<h2>fashion clothing collection</h2>
+						</a>
+					</div>
+				</div>
+			<!--ДРУГИЙ РЯД РЕКЛАМИ. КІНЕЦЬ-->
+
+			<!--МЕНЮ КАТЕГОРІЙ І ТОВАРИ ІЗ СЛАЙДЕРОМ. ПОЧАТОК-->
+				<div class="col-md-12 categories__products">
+					<ul class="more__more__categories">
+						<li>
+							<a href="#" class="shoesCategory">shoes</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="womenCategory">women</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="t-shirtCategory">t-shirt</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="fashionCategory">fashion</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="kidsCategory">kids</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="menCategory">mens</a>
+							<span class="underLayer"></span>
+						</li>
+						<li>
+							<a href="#" class="dressesCategory">dresses</a>
+							<span class="underLayer"></span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sliderProducts">
+					<div class="slider__content">
+						<div class="item">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/aquaman.png" alt="Aquaman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/wonder.png" alt="Wonder Woman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/harley.png" alt="Harley">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/wonder.png" alt="Wonder Woman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/harley.png" alt="Harley">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/aquaman.png" alt="Aquaman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/aquaman.png" alt="Aquaman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/harley.png" alt="Harley">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$250.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 productBox">
+								<div class="productBox__poster">
+									<img src="img/productsImg/wonder.png" alt="Wonder Woman">
+								</div>
+								<div class="productBox__poster_back"></div>
+								<div class="productBox__poster_hover">
+									<ul class="productBox__poster_hover icons">
+										<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Add to cart</span></a></li>
+									</ul>
+								</div>
+								<ul class="nameAndAmount">
+									<li>Digital Headphone</li>
+									<li>$350.00</li>
+									<li class="starsRate">
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star ratedStar" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__nav">
+			      <span class="nav nav__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+			      <span class="nav nav__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+			    </div>
+
+				</div>
+			<!--МЕНЮ КАТЕГОРІЙ І ТОВАРИ ІЗ СЛАЙДЕРОМ. КІНЕЦЬ-->
+			</div>
+		<!--ПРАВА КОЛОНКА /ГОЛОВНА. КІНЕЦЬ-->
+
+		<!--БЛОГ І АВТОРСТВО. ПОЧАТОК-->
+			<section class="col-md-offset-3 col-md-9 blog">
+				<div class="col-md-12 fromBlog">
+					<div class="col-md-12 blog__title">
+						<h1>From Blog</h1>
+						<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<section class="post">
+						<div class="blog__prePost">
+							<img src="img/blogImg/marvel_vs_dc.jpg" alt="Marvel vs DC">
+							<h1>Beyond Anunc Emets</h1>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+							<footer class="prePost__postInfo">
+								<h6><i class="fa fa-user" aria-hidden="true"></i> Admin</h6>
+								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 15 jan 2016</h6>
+							</footer>
+							<a href="#">Read More</a>
+						</div>
+						<span class="underPost"></span>
+					</section>
+					<section class="post">
+						<div class="blog__prePost">
+							<img src="img/blogImg/marvel_vs_dc.jpg" alt="Marvel vs DC">
+							<h1>Beyond Anunc Emets</h1>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+							<footer class="prePost__postInfo">
+								<h6><i class="fa fa-user" aria-hidden="true"></i> Admin</h6>
+								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 15 jan 2016</h6>
+							</footer>
+							<a href="#">Read More</a>
+						</div>
+						<span class="underPost"></span>
+					</section>
+				</div>
+				<div class="col-md-3 testimonial">
+					<div class="blog__title">
+						<h1>TEstimonial</h1>
+						<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<section class="post">
+						<div class="blog__prePost">
+							<header class="author">
+								<img src="img/blogImg/author.jpg" alt="Author`s Photo">
+								<ul>
+									<li>Brainiac</li>
+									<li>Extraterrestrial Android</li>
+								</ul>
+							</header>
+							<p class="ct">It seems the memory industry has taken to making announc ements which have little to say beyond announc ements which have little to say beyond.</p>
+						</div>
+						<span class="underPost"></span>
+					</section>
+				</div>
+			</section>
+		<!--БЛОГ І АВТОРСТВО. КІНЕЦЬ-->
+
+		<!--РЯД БРЕНДІВ. ПОЧАТОК-->
+			<section class="col-md-offset-3 col-md-9 brands">
+				<div class="col-md-12 brands__title">
+					<h1>top brand</h1>
+					<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				<ul class="brands__list">
+					<li>
+						<a href="#"><img src="img/brands/1.jpg" alt="Brand Logo"></a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#"><img src="img/brands/2.jpg" alt="Brand Logo"></a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#"><img src="img/brands/3.jpg" alt="Brand Logo"></a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#"><img src="img/brands/4.jpg" alt="Brand Logo"></a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#"><img src="img/brands/5.jpg" alt="Brand Logo"></a>
+						<span></span>
+					</li>
+				</ul>
+			</section>
+		<!--РЯД БРЕНДІВ. КІНЕЦЬ-->
+		</div>
+	</div>
+</main>
+
+<footer class="botInfo">
+	<div class="container">
+		<div class="row">
+			<section class="col-md-12 sub">
+				<div class="col-md-12 subscribe">
+					<form name="subscribe" method="post" action="#">
+						<label for="mail">Newsletter</label>
+						<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+  					<input type="text" name="mail" id="mail" placeholder="Enter your email">
+  					<button type="submit" class="submitButton" id="subscribeButton">submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					</form>
+				</div>
+				<span class="subUnder"></span>
+			</section>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="footerLinks">
+				<ul class="col-md-12 contactUs">
+					<h1>contact us</h1>
+					<li>Office :</li>
+					<li>795 Folsom Ave, Suite 600
+							San Francisco, CA 94107</li>
+					<li><span>Phone:</span> (91) 8547 632521</li>
+					<li><span>Fax:</span> (91) 11 4752 1433</li>
+					<li><span>Email:</span> info@panza.com</li>
+				</ul>
+				<ul>
+					<h1>MY ACCOUNT</h1>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">My Cart</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Checkout</a></li>
+				</ul>
+				<ul>
+					<h1>INFORMATION</h1>
+					<li><a href="#">Specials</a></li>
+					<li><a href="#">New Products</a></li>
+					<li><a href="#">Best Sellers</a></li>
+					<li><a href="#">Our Stores</a></li>
+				</ul>
+				<ul>
+					<h1>ORDERS</h1>
+					<li><a href="#">Payment options</a></li>
+					<li><a href="#">Shipping and delivery</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><img src="img/weAccept.png" alt="Card's image"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid copyright">
+		<div class="row">
+			<section>
+				<h6>©Copyright 2016 Bazar | All Rights Reserved</h6>
+				<ul class="socialIcons">
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</footer>
+
+
+<div id="subscribe" class="modal">
+  <div class="modal__content subscribe">
+    <h1>Thank You!</h1>
+    <p>You are subscribed now.</p>
+    <a href="#" class="confirm"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript">
+	var delay_popup = 3000;
+	setTimeout("document.getElementById('newsletter').style.display='block'", delay_popup);
+</script>
+<div id="newsletter" class="modal">
+  <div class="modal__content newsletter">
+    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <h1>NEWSLETTER</h1>
+    <p>Subscribe to the Bachas mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+    <form action="#">
+    	<input type="text" name="newsletterMail" id="newsletterMail" placeholder="Your email here" required="">
+    	<button class="subscribeButton" id="myBtn">subscribe</button>
+    	<div class="newCheckbox">
+	      <input type="checkbox" value="None" id="newCheckbox" name="check" checked />
+	      <label for="newCheckbox"></label>
+	    </div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js'></script>
+<script src='js/engine.js'></script>
+</body>
+</html>
