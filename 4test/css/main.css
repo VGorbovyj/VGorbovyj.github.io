@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-size: 16px;
+  background: #4233ff;
+  font-family: 'Roboto', Georgia, Arial, sans-serif;
+  font-weight: 400;
+  background: url(../img/bg_numbers.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .col-md-12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.intro div[class*="ava"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.intro div[class*="ava"] h1 {
+  width: 33.3%;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 44px;
+}
+
+.intro div[class*="ava"] h1:first-of-type {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.intro div[class*="ava"] h1:last-of-type {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.intro div[class*="ava"] img {
+  width: 180px;
+  height: 180px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(17, 17, 17, 0.6);
+}
+
+.intro div[class*="about"] {
+  padding: 10px 160px;
+}
+
+.intro div[class*="about"] p {
+  padding: 20px;
+  font-style: italic;
+  font-size: 18px;
+  color: #3a3a3a;
+  box-shadow: 0 2px 4px rgba(17, 17, 17, 0.4);
+  border-radius: 4px;
+}
+
+.intro nav[class*="nav"] ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intro nav[class*="nav"] ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.intro nav[class*="nav"] ul li a {
+  padding: 6px 18px;
+  color: #3a3a3a;
+  border-top: 2px solid transparent;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+}
+
+.intro nav[class*="nav"] ul li a:hover {
+  color: #222222;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 2px 4px rgba(17, 17, 17, 0.4);
+}
+
+.intro nav[class*="nav"] ul li:nth-child(even) a:hover {
+  border-top: 2px solid #f46a6a;
+  background: rgba(244, 106, 106, 0.15);
+}
+
+.intro nav[class*="nav"] ul li:nth-child(odd) a:hover {
+  border-top: 2px solid #42bdde;
+  background: rgba(66, 189, 222, 0.15);
+}
