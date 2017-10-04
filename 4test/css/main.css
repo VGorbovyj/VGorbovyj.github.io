@@ -222,12 +222,8 @@ p {
 }
 
 p .rate {
-  font-size: 18px;
-  font-style: italic;
   letter-spacing: .5px;
   color: #d63717;
-  font-weight: 600;
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
 }
 
 .reviewContainer {
