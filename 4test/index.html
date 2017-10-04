@@ -30,36 +30,201 @@
 
 <link href="css/bootstrap-grid-3.3.1.min.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
+<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&amp;subset=cyrillic-ext" rel="stylesheet">
 
 </head>
-<body>
+<body id="home">
+
+
+<section>
+    <div class="menu-icon">
+        <div class="menu-icon__line-1"></div>
+        <div class="menu-icon__line-2"></div>
+        <div class="menu-icon__line-3"></div>
+    </div>
+    <nav>
+        <h1><i class="fa fa-map-signs" aria-hidden="true"></i> Меню</h1>
+        <ul class="menu-list">
+            <li class="menu-list__item">
+            	<a href="#anchorMe">Про мене</a>
+            </li>
+            <li class="menu-list__item">
+            	<a href="#education">Навчання</a>
+            </li>
+            <li class="menu-list__item">
+            	<a href="#reviews">Відгуки</a>
+            </li>
+            <li class="menu-list__item">
+            	<a href="#prices">Ціни</a>
+            </li>
+            <li class="menu-list__item">
+            	<a href="#contacts">Контакти</a>
+            </li>
+            <li class="menu-list__item">
+            	<a href="#home">Вгору</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
 
 <header class="container-fluid" id="top">
 	<div class="row">
 		<div class="col-md-12 intro">
 			<div class="col-md-12 intro__ava">
-				<h1>Анна</h1><img src="img/main_photo.jpg" alt="Anna Krymova"><h1>Крымова</h1>
+				<h1 class="col-md-4">Анна</h1><img src="img/main_photo.jpg" alt="Anna Krymova"><h1 class="col-md-4">Крымова</h1>
 			</div>
 			<div class="col-md-12 intro__about">
-				<p>Репетитор. Sed eu metus ut ex consectetur commodo non a velit. Integer tincidunt sodales nibh id dictum. Sed sollicitudin nisl dui, dictum aliquam diam dignissim vitae. Nullam magna felis, sodales nec sem a, fringilla sollicitudin neque.</p>
+				<p>Репетитор з <span class="mathColor">математики</span> та <span class="infColor">інформатики</span>.</p>
 			</div>
-			<nav class="col-md-12 intro__nav">
-				<ul>
-					<li><a href="#">Обо мне</a></li>
-					<li><a href="#">Дипломы</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Цены</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
 		</div>
 	</div>
 </header>
 
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 aboutMe" id="anchorMe">
+				<h1 class="col-md-12 blockTitle">Про мене</h1>
+				<div class="col-md-9">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-university" aria-hidden="true"></i></h1>
+						<p>Я - студентка 4 курсу <span class="rate">ХНУ ім. В. Н. Каразіна</span>, факультет математики та інформатики (колиш. Механіко-математичний факультет), випускниця ХФМЛ # 27. </p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-star" aria-hidden="true"></i></h1>
+						<p>Середній бал заліковки: <span class="rate">5.0</span></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
+						<p>ЗНО з математики 2014: <span class="rate">198.5</span></p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-trophy" aria-hidden="true"></i></h1>
+						<p>Проходила <span class="rate">стажування</span> у Літній міжнародний школі Купцінет-Гьонц 2017 Ізраїлі (<span class="rate">Kupcinet-Getz International Summer School 2017</span>).</p>
+						<p><span class="rate">Волонтер</span> благодійного проекту <span class="rate">"Домашні завдання по скайпу" 2017</span>.</p>
+						<p><span class="rate">Лауреат Стипендії Президента України</span> 2014-2015.</p>
+						<p><span class="rate">Представляла Україну</span> на Європейському змаганні юних науковців 2014 (<span class="rate">EUCYS 2014</span>).</p>
+						<p><span class="rate">1 місце</span> на Всеукраїнському конкурсі-захисті науково-дослідницьких робіт <span class="rate">МАН 2014</span> (секція: математика).</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-12 education" id="education">
+				<h1 class="col-md-12 blockTitle">Навчання і переваги</h1>
+				<div class="col-md-6">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-book" aria-hidden="true"></i></h1>
+						<p><span class="rate">Молодша, середня, старша школа, університетські курси, олімпіадних математика, ЗНО, ДПА</span>.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-language" aria-hidden="true"></i></h1>
+						<p>Мови викладання: <span class="rate">російська, українська, англійська</span>.</p>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-heart" aria-hidden="true"></i></h1>
+						<p>Мої учні з оцінок 5-7 <span class="rate">виходять на 9-11</span>, успішно складають ДПА та ЗНО, <span class="rate">стають призерами</span> математичних олімпіад та конкурсу науково-дослідницьких робіт МАН та найголовніше - <span class="rate">ЛЮБЛЯТЬ МАТЕМАТИКУ</span>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 reviews" id="reviews">
+				<h1 class="col-md-12 blockTitle">Відгуки</h1>
+				
+				<div class="col-md-3">
+					<div class="reviewBlock">
+						<h1><a href="https://vk.com/chayka_marinka"><span class="wColor">Марина Зубко</span></a></h1>
+						<img src="img/re1.png" alt="1st">
+						<p>Обратилась к Анне Валериевне в сентябре - октябре 2016 года , мой уровень был мягко сказать , ниже низкого. Начали с вообще с таблицы умножения. А мне же нужно дпа сдавать в конце 9 класса. Короче ситуация была очень плачевная. Но благодаря Анне мы за год заполнили почти все мои пробелы и дпа я сдала на нормальную оценку , а не на ноль. Занятия проходили в дружественной и добродушной обстановке, мне очень понравилось что репетитор находит к каждому индивидуальный подход) я действительно научилась думать в правильном направлении и перестала бояться математики :) Мы продолжаем заниматься и сейчас, скоро зно и совершенству нет предела, особенно с моим гуманитарным( как я считаю) складом ума. Спасибо большое за полученные знания:)</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="reviewBlock">
+						<h1><a href="https://vk.com/chayka_marinka"><span class="wColor">Марина Зубко</span></a></h1>
+						<img src="img/re1.png" alt="1st">
+						<p>Обратилась к Анне Валериевне в сентябре - октябре 2016 года , мой уровень был мягко сказать , ниже низкого. Начали с вообще с таблицы умножения. А мне же нужно дпа сдавать в конце 9 класса. Короче ситуация была очень плачевная. Но благодаря Анне мы за год заполнили почти все мои пробелы и дпа я сдала на нормальную оценку , а не на ноль. Занятия проходили в дружественной и добродушной обстановке, мне очень понравилось что репетитор находит к каждому индивидуальный подход) я действительно научилась думать в правильном направлении и перестала бояться математики :) Мы продолжаем заниматься и сейчас, скоро зно и совершенству нет предела, особенно с моим гуманитарным( как я считаю) складом ума. Спасибо большое за полученные знания:)</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="reviewBlock">
+						<h1><a href="https://vk.com/chayka_marinka"><span class="wColor">Марина Зубко</span></a></h1>
+						<img src="img/re1.png" alt="1st">
+						<p>Обратилась к Анне Валериевне в сентябре - октябре 2016 года , мой уровень был мягко сказать , ниже низкого. Начали с вообще с таблицы умножения. А мне же нужно дпа сдавать в конце 9 класса. Короче ситуация была очень плачевная. Но благодаря Анне мы за год заполнили почти все мои пробелы и дпа я сдала на нормальную оценку , а не на ноль. Занятия проходили в дружественной и добродушной обстановке, мне очень понравилось что репетитор находит к каждому индивидуальный подход) я действительно научилась думать в правильном направлении и перестала бояться математики :) Мы продолжаем заниматься и сейчас, скоро зно и совершенству нет предела, особенно с моим гуманитарным( как я считаю) складом ума. Спасибо большое за полученные знания:)</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="reviewBlock">
+						<h1><a href="https://vk.com/chayka_marinka"><span class="wColor">Марина Зубко</span></a></h1>
+						<img src="img/re1.png" alt="1st">
+						<p>Обратилась к Анне Валериевне в сентябре - октябре 2016 года , мой уровень был мягко сказать , ниже низкого. Начали с вообще с таблицы умножения. А мне же нужно дпа сдавать в конце 9 класса. Короче ситуация была очень плачевная. Но благодаря Анне мы за год заполнили почти все мои пробелы и дпа я сдала на нормальную оценку , а не на ноль. Занятия проходили в дружественной и добродушной обстановке, мне очень понравилось что репетитор находит к каждому индивидуальный подход) я действительно научилась думать в правильном направлении и перестала бояться математики :) Мы продолжаем заниматься и сейчас, скоро зно и совершенству нет предела, особенно с моим гуманитарным( как я считаю) складом ума. Спасибо большое за полученные знания:)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 prices" id="prices">
+				<h1 class="col-md-12 blockTitle">Ціни</h1>
+				
+				<div class="col-md-6">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-money" aria-hidden="true"></i></h1>
+						<p>Вартість занять: <span class="rate">120-150 грн/год.</span> </p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 contacts" id="contacts">
+				<h1 class="col-md-12 blockTitle">Контакти</h1>
+				
+				<div class="col-md-3">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+						<p>Місце проведення занять: <span class="rate">метро Площа Повстання (Захисників України)</span></p>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-skype" aria-hidden="true"></i></h1>
+						<p>Skype: <span class="rate">**********</span></p>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-facebook-official" aria-hidden="true"></i></h1>
+						<p>Facebook: <span class="rate"><a href="https://www.facebook.com/annakrymova27">annakrymova27</a></span></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+</main>
 
 <script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/scroll.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

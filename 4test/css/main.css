@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   transition: all .3s;
@@ -18,12 +19,144 @@ body {
   background-attachment: fixed;
 }
 
+/** МЕНЮ ПОЧАТОК **/
+.menu-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 32px;
+  margin: 0;
+  padding: 0.8rem 0.5rem;
+  background-color: rgba(17, 17, 17, 0.4);
+  cursor: pointer;
+  z-index: 30;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+div[class$="line-1"], div[class$="line-2"], div[class$="line-3"] {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+div[class$="line-2"] {
+  margin: 3px 0;
+}
+
+.menu-magic > div[class$="line-1"] {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-magic > div[class$="line-2"] {
+  opacity: 0;
+}
+
+.menu-magic > div[class$="line-3"] {
+  transform: rotate(-45deg) translate(3px, -4px);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -101vw;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  background: rgba(33, 33, 33, 0.8);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+  z-index: 20;
+}
+
+.main-nav {
+  right: 0;
+  width: 20%;
+}
+
+.main-nav h1 {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10%;
+  padding: 2rem 0.5rem;
+  font-size: 2.4rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+}
+
+ul[class$="menu-list"] {
+  width: 100%;
+  list-style: none;
+  line-height: 2.2;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+li[class$="menu-list__item"] {
+  width: 100%;
+  margin: 0.2rem 0;
+  padding: 0.2rem 0.4rem;
+  background-color: transparent;
+}
+
+li[class$="menu-list__item"] a {
+  color: whitesmoke;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li[class$="menu-list__item"]:hover {
+  background: rgba(17, 17, 17, 0.4);
+}
+
+li[class$="menu-list__item"] a:hover {
+  padding-right: 1.5rem;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+}
+
+li[class$="menu-list__item"]:nth-child(odd) a:hover {
+  color: #f46a6a;
+}
+
+li[class$="menu-list__item"]:nth-child(even) a:hover {
+  color: #42bdde;
+}
+
+li[class$="menu-list__item"] a:active {
+  padding-left: 5.5rem;
+}
+
+/** КІНЕЦЬ МЕНЮ **/
+header.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
 .intro {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .intro .col-md-12 {
@@ -32,21 +165,24 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .intro div[class*="ava"] {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 15vh;
+  margin-top: 25vh;
 }
 
 .intro div[class*="ava"] h1 {
-  width: 33.3%;
   font-weight: 100;
   font-style: italic;
-  font-size: 44px;
+  font-size: 54px;
+  color: rgba(17, 17, 17, 0.8);
 }
 
 .intro div[class*="ava"] h1:first-of-type {
@@ -68,6 +204,7 @@ body {
 }
 
 .intro div[class*="about"] {
+  margin-top: 80px;
   padding: 10px 160px;
 }
 
@@ -75,43 +212,211 @@ body {
   padding: 20px;
   font-style: italic;
   font-size: 18px;
-  color: #3a3a3a;
-  box-shadow: 0 2px 4px rgba(17, 17, 17, 0.4);
+  color: white;
+  background: rgba(17, 17, 17, 0.45);
+  box-shadow: 0 2px 2px rgba(17, 17, 17, 0.4);
   border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
-.intro nav[class*="nav"] ul {
+.intro div[class*="about"] p .mathColor {
+  color: #f46a6a;
+}
+
+.intro div[class*="about"] p .infColor {
+  color: #42bdde;
+}
+
+main .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+main .container-fluid .row {
+  padding: 0;
+  margin: 0;
+}
+
+.aboutMe,
+.education,
+.reviews,
+.prices,
+.contacts {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 80px;
+  padding: 0;
 }
 
-.intro nav[class*="nav"] ul li {
-  display: inline-block;
-  margin: 0 20px;
+.blockTitle {
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+  font-size: 44px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 25px 0;
+  font-style: italic;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+  background-color: rgba(17, 17, 17, 0.75);
 }
 
-.intro nav[class*="nav"] ul li a {
-  padding: 6px 18px;
-  color: #3a3a3a;
-  border-top: 2px solid transparent;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+div[class*="col"] .achievementsCont {
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0);
+  margin-bottom: 15px;
+  height: 100%;
 }
 
-.intro nav[class*="nav"] ul li a:hover {
-  color: #222222;
-  border-top: 1px solid #111111;
+div[class*="col"] .achievementsCont:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.4);
+}
+
+div[class*="col"] .achievementsCont a {
+  color: #f46a6a;
+}
+
+div[class*="col"] .achievementsCont a:hover {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+h1.ico {
+  text-align: center;
+  border-bottom: none;
+}
+
+h1.ico i {
+  color: rgba(17, 17, 17, 0.8);
+  padding-bottom: 30px;
+  font-size: 60px;
+  border-bottom: 2px solid rgba(17, 17, 17, 0.4);
+}
+
+p {
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.4);
+}
+
+p .rate {
+  font-size: 20px;
+  color: #f46a6a;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+}
+
+.reviewBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.reviewBlock:hover {
+  background: rgba(17, 17, 17, 0.4);
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.4);
+}
+
+.reviewBlock h1 {
+  font-size: 20px;
+}
+
+.reviewBlock h1 .wColor {
+  color: white;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   border-bottom: 1px solid transparent;
-  box-shadow: 0 2px 4px rgba(17, 17, 17, 0.4);
 }
 
-.intro nav[class*="nav"] ul li:nth-child(even) a:hover {
-  border-top: 2px solid #f46a6a;
-  background: rgba(244, 106, 106, 0.15);
+.reviewBlock h1 .wColor:hover {
+  border-bottom: 1px solid #42bdde;
 }
 
-.intro nav[class*="nav"] ul li:nth-child(odd) a:hover {
-  border-top: 2px solid #42bdde;
-  background: rgba(66, 189, 222, 0.15);
+.reviewBlock img {
+  width: 50%;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.reviewBlock p {
+  color: #111111;
+  text-shadow: none;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.reviewBlock p::before {
+  content: '« ';
+  color: #42bdde;
+  font-size: 20px;
+}
+
+.reviewBlock p::after {
+  content: ' »';
+  color: #42bdde;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 241px) and (max-width: 479px) {
+  .main-nav {
+    right: 0;
+    width: 60%;
+  }
+  .intro {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .intro .col-md-12 {
+    flex-flow: row wrap;
+  }
+  .intro div[class*="ava"] {
+    flex-flow: row wrap;
+    margin-top: 1vh;
+  }
+  .intro div[class*="ava"] h1 {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 44px;
+    color: rgba(17, 17, 17, 0.8);
+  }
+  .intro div[class*="ava"] h1:first-of-type {
+    padding-right: 0;
+  }
+  .intro div[class*="ava"] h1:last-of-type {
+    padding-left: 0;
+  }
+  .intro div[class*="about"] {
+    margin-top: 0;
+    padding: 10px 20px;
+  }
+  .intro div[class*="about"] p {
+    padding: 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    background: rgba(17, 17, 17, 0.45);
+    box-shadow: 0 2px 2px rgba(17, 17, 17, 0.4);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .intro div[class*="about"] p .mathColor {
+    color: #f46a6a;
+  }
+  .intro div[class*="about"] p .infColor {
+    color: #42bdde;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 640px) {
+  .main-nav {
+    right: 0;
+    width: 40%;
+  }
 }
