@@ -18,6 +18,14 @@ body {
   background-attachment: fixed;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 header.container-fluid {
   padding: 0;
   margin: 0;
@@ -371,11 +379,14 @@ footer {
   background: rgba(17, 17, 17, 0.9);
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   background-color: rgba(17, 17, 17, 0.9);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 footer p {
   color: white;
+  font-size: 14px;
 }
 
 footer a {
@@ -383,6 +394,7 @@ footer a {
 }
 
 footer a:hover {
+  color: #d63717;
   border-bottom: 1px solid white;
 }
 
