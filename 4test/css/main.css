@@ -83,14 +83,7 @@ header.container-fluid {
 .intro nav[class*="nav"] ul li a:hover {
   color: white;
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.9);
-}
-
-.intro nav[class*="nav"] ul li:nth-child(even) a:hover {
   border-bottom: 2px solid #d63717;
-}
-
-.intro nav[class*="nav"] ul li:nth-child(odd) a:hover {
-  border-bottom: 2px solid #f46a6a;
 }
 
 .intro div[class*="ava"] {
@@ -104,7 +97,6 @@ header.container-fluid {
 
 .intro div[class*="ava"] h1 {
   font-weight: 100;
-  font-style: italic;
   font-size: 54px;
   color: white;
   text-align: left;
@@ -120,7 +112,6 @@ header.container-fluid {
 
 .intro div[class*="ava"] p {
   padding: 20px;
-  font-style: italic;
   font-size: 18px;
   color: white;
   background: rgba(17, 17, 17, 0.45);
@@ -159,7 +150,7 @@ main .container-fluid .row {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 80px;
+  margin-top: 30px;
   padding: 0;
 }
 
@@ -169,8 +160,7 @@ main .container-fluid .row {
   text-align: center;
   font-size: 44px;
   color: white;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   padding: 25px 0;
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   background-color: rgba(17, 17, 17, 0.75);
@@ -224,6 +214,7 @@ p {
 p .rate {
   letter-spacing: .5px;
   color: #d63717;
+  font-weight: 700;
 }
 
 .reviewContainer {
@@ -231,8 +222,14 @@ p .rate {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 0;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0);
+  margin-bottom: 30px;
+}
+
+.reviewContainer:hover {
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.8);
+  border-radius: 4px;
 }
 
 .reviewContainer .student {
@@ -319,12 +316,12 @@ p .rate {
 .reviewContainer .teacher img {
   width: 100%;
   border-radius: 50%;
-  border: 3px solid rgba(244, 106, 106, 0.8);
+  border: 3px solid rgba(214, 55, 23, 0.8);
 }
 
 .reviewContainer .teachersAnswer {
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 
@@ -335,13 +332,13 @@ p .rate {
 
 .reviewContainer p::before {
   content: '« ';
-  color: #f46a6a;
+  color: #d63717;
   font-size: 20px;
 }
 
 .reviewContainer p::after {
   content: ' »';
-  color: #f46a6a;
+  color: #d63717;
   font-size: 20px;
 }
 
@@ -389,7 +386,12 @@ footer a:hover {
   border-bottom: 1px solid white;
 }
 
-@media screen and (min-width: 241px) and (max-width: 479px) {
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+@media screen and (min-width: 241px) and (max-width: 478px) {
   .main-nav {
     right: 0;
     width: 60%;
@@ -401,27 +403,47 @@ footer a:hover {
   .intro .col-md-12 {
     flex-flow: row wrap;
   }
-  .intro div[class*="ava"] {
+  nav[class*="nav"] ul {
+    padding-left: 0;
+    display: flex;
     flex-flow: row wrap;
-    margin-top: 1vh;
+    justify-content: flexs-start;
+    align-items: center;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    list-style-type: none;
   }
-  .intro div[class*="ava"] h1 {
+  nav[class*="nav"] ul li {
+    display: inline-block;
+    margin: 15px 15px;
+  }
+  nav[class*="nav"] ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white;
+    border-bottom: 2px solid transparent;
+  }
+  nav[class*="nav"] div[class*="ava"] {
+    flex-flow: row wrap;
+    margin-top: 5vh;
+  }
+  nav[class*="nav"] div[class*="ava"] h1 {
     font-weight: 100;
-    font-style: italic;
     font-size: 44px;
-    color: rgba(17, 17, 17, 0.8);
   }
-  .intro div[class*="ava"] h1:first-of-type {
+  nav[class*="nav"] div[class*="ava"] h1:first-of-type {
     padding-right: 0;
   }
-  .intro div[class*="ava"] h1:last-of-type {
+  nav[class*="nav"] div[class*="ava"] h1:last-of-type {
     padding-left: 0;
   }
-  .intro div[class*="about"] {
+  nav[class*="nav"] div[class*="about"] {
     margin-top: 0;
     padding: 10px 20px;
   }
-  .intro div[class*="about"] p {
+  nav[class*="nav"] div[class*="about"] p {
     padding: 20px;
     font-style: italic;
     font-size: 18px;
@@ -433,11 +455,14 @@ footer a:hover {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
   }
-  .intro div[class*="about"] p .mathColor {
+  nav[class*="nav"] div[class*="about"] p .mathColor {
     color: #f46a6a;
   }
-  .intro div[class*="about"] p .infColor {
+  nav[class*="nav"] div[class*="about"] p .infColor {
     color: #d63717;
+  }
+  .map .map__google iframe {
+    width: 230px;
   }
 }
 
@@ -445,5 +470,14 @@ footer a:hover {
   .main-nav {
     right: 0;
     width: 40%;
+  }
+  .map .map__google iframe {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 860px) {
+  .map .map__google iframe {
+    width: 600px;
   }
 }
