@@ -386,6 +386,15 @@ footer a:hover {
   border-bottom: 1px solid white;
 }
 
+.carousel-control {
+  color: #111111;
+}
+
+.carousel-control:focus,
+.carousel-control:hover {
+  color: #d63717;
+}
+
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
