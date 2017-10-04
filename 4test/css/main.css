@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   font-family: 'Roboto', Georgia, Arial, sans-serif;
   font-weight: 400;
-  background: url(../img/bg_numbers.svg);
+  background: #f5f5f5;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -86,7 +86,7 @@ header.container-fluid {
 }
 
 .intro nav[class*="nav"] ul li:nth-child(even) a:hover {
-  border-bottom: 2px solid #f49a6a;
+  border-bottom: 2px solid #d63717;
 }
 
 .intro nav[class*="nav"] ul li:nth-child(odd) a:hover {
@@ -136,7 +136,7 @@ header.container-fluid {
 }
 
 .intro div[class*="ava"] p .infColor {
-  color: #f49a6a;
+  color: #d63717;
 }
 
 main .container-fluid {
@@ -153,7 +153,8 @@ main .container-fluid .row {
 .education,
 .reviews,
 .prices,
-.contacts {
+.contacts,
+.map {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -171,7 +172,6 @@ main .container-fluid .row {
   margin-top: 40px;
   margin-bottom: 20px;
   padding: 25px 0;
-  font-style: italic;
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   background-color: rgba(17, 17, 17, 0.75);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -186,16 +186,16 @@ div[class*="col"] .achievementsCont {
 }
 
 div[class*="col"] .achievementsCont:hover {
-  background-color: rgba(17, 17, 17, 0.75);
+  background-color: white;
   box-shadow: 0 1px 2px rgba(17, 17, 17, 0.4);
 }
 
 div[class*="col"] .achievementsCont:hover > h1 > i {
-  color: #f49a6a;
+  color: #d63717;
 }
 
 div[class*="col"] .achievementsCont a {
-  color: #f49a6a;
+  color: #d63717;
   border-bottom: 1px solid transparent;
 }
 
@@ -209,23 +209,23 @@ h1.ico {
 }
 
 h1.ico i {
-  color: white;
+  color: rgba(17, 17, 17, 0.75);
   padding-bottom: 30px;
   font-size: 60px;
   border-bottom: 2px solid rgba(17, 17, 17, 0.4);
 }
 
 p {
-  color: white;
+  color: rgba(17, 17, 17, 0.75);
   text-align: center;
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.2);
 }
 
 p .rate {
   font-size: 18px;
   font-style: italic;
   letter-spacing: .5px;
-  color: #f49a6a;
+  color: #d63717;
   font-weight: 600;
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
 }
@@ -260,7 +260,7 @@ p .rate {
 
 .reviewContainer .student img {
   width: 100%;
-  border: 3px solid rgba(244, 154, 106, 0.8);
+  border: 3px solid rgba(214, 55, 23, 0.8);
   border-radius: 50%;
 }
 
@@ -290,13 +290,13 @@ p .rate {
 
 .reviewContainer .studentsQuote p::before {
   content: '« ';
-  color: #f49a6a;
+  color: #d63717;
   font-size: 20px;
 }
 
 .reviewContainer .studentsQuote p::after {
   content: ' »';
-  color: #f49a6a;
+  color: #d63717;
   font-size: 20px;
 }
 
@@ -316,7 +316,7 @@ p .rate {
 
 .reviewContainer .teacher h1 {
   margin: 0;
-  color: #f49a6a;
+  color: #d63717;
   text-shadow: 0 1px 1px #111111;
 }
 
@@ -349,15 +349,44 @@ p .rate {
   font-size: 20px;
 }
 
+.map {
+  padding-bottom: 15px;
+}
+
+.map .map__google {
+  text-align: center;
+}
+
+.map .map__google iframe {
+  border: 3px solid rgba(17, 17, 17, 0.6);
+}
+
+.map .map__google iframe:hover {
+  border-color: #d63717;
+  box-shadow: 0 0 8px rgba(17, 17, 17, 0.8);
+}
+
+.map .map__google p {
+  border-bottom: 1px solid #d63717;
+}
+
+.map .map__google p i {
+  color: #d63717;
+}
+
 footer {
-  background: #000;
+  background: rgba(17, 17, 17, 0.9);
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   background-color: rgba(17, 17, 17, 0.9);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+footer p {
+  color: white;
+}
+
 footer a {
-  color: #f49a6a;
+  color: #d63717;
 }
 
 footer a:hover {
@@ -412,7 +441,7 @@ footer a:hover {
     color: #f46a6a;
   }
   .intro div[class*="about"] p .infColor {
-    color: #f49a6a;
+    color: #d63717;
   }
 }
 
