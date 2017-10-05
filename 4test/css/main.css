@@ -100,7 +100,7 @@ header.container-fluid {
 .intro nav[class*="nav"] ul li a:hover {
   color: white;
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.9);
-  border-bottom: 2px solid #15997a;
+  border-bottom: 2px solid #0f8896;
 }
 
 .intro div[class*="ava"] {
@@ -154,7 +154,7 @@ header.container-fluid {
 }
 
 .intro div[class*="text"] p .infColor {
-  color: #15997a;
+  color: #0f8896;
 }
 
 main .container-fluid {
@@ -213,11 +213,11 @@ div[class*="col"] .achievementsCont:hover {
 }
 
 div[class*="col"] .achievementsCont:hover > h1 > i {
-  color: #15997a;
+  color: #0f8896;
 }
 
 div[class*="col"] .achievementsCont a {
-  color: #15997a;
+  color: #0f8896;
   border-bottom: 1px solid transparent;
 }
 
@@ -245,7 +245,7 @@ p {
 
 p .rate {
   letter-spacing: .5px;
-  color: #15997a;
+  color: #0f8896;
   font-weight: 700;
 }
 
@@ -295,7 +295,7 @@ p .rate {
 
 .reviewContainer .student img {
   width: 100%;
-  border: 3px solid rgba(21, 153, 122, 0.8);
+  border: 3px solid rgba(15, 136, 150, 0.8);
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -329,13 +329,13 @@ p .rate {
 
 .reviewContainer .studentsQuote p::before {
   content: '« ';
-  color: #15997a;
+  color: #0f8896;
   font-size: 20px;
 }
 
 .reviewContainer .studentsQuote p::after {
   content: ' »';
-  color: #15997a;
+  color: #0f8896;
   font-size: 20px;
 }
 
@@ -355,14 +355,14 @@ p .rate {
 
 .reviewContainer .teacher h1 {
   margin: 0;
-  color: #15997a;
+  color: #0f8896;
   text-shadow: 0 1px 1px #111111;
 }
 
 .reviewContainer .teacher img {
   width: 100%;
   border-radius: 50%;
-  border: 3px solid rgba(21, 153, 122, 0.8);
+  border: 3px solid rgba(15, 136, 150, 0.8);
 }
 
 .reviewContainer .teachersAnswer {
@@ -378,13 +378,13 @@ p .rate {
 
 .reviewContainer p::before {
   content: '« ';
-  color: #15997a;
+  color: #0f8896;
   font-size: 20px;
 }
 
 .reviewContainer p::after {
   content: ' »';
-  color: #15997a;
+  color: #0f8896;
   font-size: 20px;
 }
 
@@ -459,16 +459,16 @@ p .rate {
 }
 
 .map .map__google iframe:hover {
-  border-color: #15997a;
+  border-color: #0f8896;
   box-shadow: 0 0 8px rgba(17, 17, 17, 0.8);
 }
 
 .map .map__google p {
-  border-bottom: 1px solid #15997a;
+  border-bottom: 1px solid #0f8896;
 }
 
 .map .map__google p i {
-  color: #15997a;
+  color: #0f8896;
 }
 
 footer {
@@ -486,11 +486,11 @@ footer p {
 }
 
 footer a {
-  color: #15997a;
+  color: #0f8896;
 }
 
 footer a:hover {
-  color: #15997a;
+  color: #0f8896;
   border-bottom: 1px solid white;
 }
 
@@ -500,7 +500,7 @@ footer a:hover {
 
 .carousel-control:focus,
 .carousel-control:hover {
-  color: #15997a;
+  color: #0f8896;
 }
 
 .carousel-control.left,
