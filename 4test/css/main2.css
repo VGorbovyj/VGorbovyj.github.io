@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', Georgia, Arial, sans-serif;
+  font-weight: 400;
+  background: #eeeeee;
+  background-attachment: fixed;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class*="hov"]:hover {
+  background: white;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.8);
+}
+
+.col-md-12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-9 h2 {
+  text-align: center;
+}
+
+.mainList {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.mainList li:nth-child(odd) {
+  font-weight: 600;
+}
+
+.mainList li:nth-child(even) {
+  padding-left: 20px;
+}
+
+.mainList ul li {
+  font-weight: 400;
+}
+
+.mainList ul li:nth-child(odd) {
+  font-weight: 400;
+}
+
+.mainList ul li:nth-child(even) {
+  padding-left: 0;
+}
+
+.foot {
+  margin-bottom: 60px;
+}
+
+.top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(17, 17, 17, 0.2);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.full {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.8);
+}
