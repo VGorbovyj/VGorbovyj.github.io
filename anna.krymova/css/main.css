@@ -160,36 +160,6 @@ header.container-fluid {
   color: #0f8896;
 }
 
-.diplomas {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: rgba(17, 17, 17, 0.1);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-}
-
-.diplomas .diplomas__block {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px;
-}
-
-.diplomas .diplomas__block img {
-  padding: 4px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 4px solid rgba(17, 17, 17, 0.4);
-}
-
-.diplomas .diplomas__block:hover img {
-  border-color: #0f8896;
-}
-
 main .container-fluid {
   margin: 0;
   padding: 0;
@@ -508,6 +478,7 @@ p .rate {
 
 .contacts__list li {
   margin: 15px 15px;
+  padding: 5px;
 }
 
 .contacts__list li a {
@@ -520,6 +491,7 @@ p .rate {
 
 .contacts__list li a i:hover {
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.4);
+  transform: translateY(-10px);
 }
 
 .contacts__list li:nth-child(1):hover a i {
@@ -544,14 +516,19 @@ p .rate {
 
 .contacts__list li:last-child {
   display: block;
-  font-size: 36px;
+  font-size: 26px;
   color: rgba(17, 17, 17, 0.6);
   width: 100%;
   text-align: center;
 }
 
+.contacts__list li:last-child i {
+  font-size: 26px;
+}
+
 .contacts__list li:last-child:hover {
   color: #59267c;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.4);
 }
 
 .contacts__list li:last-child:hover a {
@@ -646,6 +623,58 @@ footer a:hover {
   background-image: none;
 }
 
+.diplomas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.diplomas .diplomas__block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.diplomas .diplomas__block img {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid rgba(17, 17, 17, 0.4);
+}
+
+.diplomas .diplomas__block:hover img {
+  border-color: #0f8896;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  text-align: center;
+  background: transparent;
+  outline: none;
+  border: none;
+  text-shadow: 0 0 2px rgba(17, 17, 17, 0.8);
+}
+
+.closeBtn i {
+  font-size: 40px;
+  color: white;
+}
+
+.closeBtn:hover i {
+  color: #0f8896;
+}
+
 @media screen and (min-width: 241px) and (max-width: 478px) {
   .blockTitle {
     font-size: 28px;
@@ -722,6 +751,12 @@ footer a:hover {
     display: none;
     z-index: -5;
     opacity: 0;
+  }
+  .contacts__list li:last-child {
+    font-size: 18px;
+  }
+  .contacts__list li:last-child i {
+    font-size: 18px;
   }
 }
 

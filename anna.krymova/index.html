@@ -44,17 +44,14 @@
         		<li><a href="#anchorMe"><i class="fa fa-id-card" aria-hidden="true"></i></a></li>
             <li><a href="#anchorMe">Обо мне</a></li>
 
-						<li><a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
-            <li><a href="#education">Обучение</a></li>
-
-						<li><a href="#reviews"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-						
 						<li><a href="#prices"><i class="fa fa-money" aria-hidden="true"></i></a></li>
-            <li><a href="#prices">Цены</a></li>
+            <li><a href="#prices">Условия</a></li>
 						
 						<li><a href="#contacts"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
             <li><a href="#contacts">Контакты</a></li>
+
+            <li><a href="#reviews"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+            <li><a href="#reviews">Отзывы</a></li>
 
             <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         </ul>
@@ -74,25 +71,56 @@
 	<div class="row">
 			<div class="col-md-12 diplomas">
 
+    
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" content="user-scalable=yes">
+  <div class="modal-dialog" data-dismiss="modal" style="hight: 80%; width: 80%; margin: 0 auto">
+    <div class="modal-content" style="background-color: transparent; border-radius: 0; box-shadow: none; border: none;">              
+      <div class="modal-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: none; border: none;">
+      	<button type="button" class="closeBtn" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times-circle" aria-hidden="true"></i></span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%; box-shadow: 0 0 24px rgba(11, 11, 11, .6)">
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+
 				<div class="col-md-2 diplomas__block">
-					<a href="img/d/d1.jpg"><img src="img/d/d1m.png" alt="EBLS, диплом"></a>
-				</div>
-		    
-		    <div class="col-md-2 diplomas__block">
-					<a href="img/d/d2.jpg"><img src="img/d/d2m.png" alt="Член жюри, благодарность"></a>
+					<span class="pop">
+			    	<img src="img/d/d1m.png" alt="EBLS, диплом" style="width: 140px; height: 100px; cursor: pointer;" class="img-responsive">
+					</span>
 				</div>
 
 				<div class="col-md-2 diplomas__block">
-					<a href="img/d/d3.jpg"><img src="img/d/d3m.png" alt="МАН, диплом"></a>
+					<span class="pop">
+			    	<img src="img/d/d2m.png" alt="Член жюри, благодарность" style="width: 100px; height: 140px; cursor: pointer;" class="img-responsive">
+					</span>
 				</div>
 
 				<div class="col-md-2 diplomas__block">
-					<a href="img/d/d4.jpg"><img src="img/d/d4m.png" alt="Стипендия Президента Украины, диплом"></a>
+					<span class="pop">
+			    	<img src="img/d/d3m.png" alt="МАН, диплом" style="width: 100px; height: 140px; cursor: pointer;" class="img-responsive">
+					</span>
 				</div>
 
 				<div class="col-md-2 diplomas__block">
-					<a href="img/d/d5.jpg"><img src="img/d/d5m.png" alt="Европейское соревновании юных ученых, сертификат"></a>
-				</div> 
+					<span class="pop">
+			    	<img src="img/d/d4m.png" alt="Стипендия Президента Украины, диплом" style="width: 100px; height: 140px; cursor: pointer;" class="img-responsive">
+					</span>
+				</div>
+
+				<div class="col-md-2 diplomas__block">
+					<span class="pop">
+			    	<img src="img/d/d5m.png" alt="Европейское соревновании юных ученых, сертификат" style="width: 100px; height: 140px; cursor: pointer;" class="img-responsive">
+					</span>
+				</div>
+
+				<div class="col-md-2 diplomas__block">
+					<span class="pop">
+			    	<img src="img/d/d6m.png" alt="Cертификат" style="width: 100px; height: 140px; cursor: pointer;" class="img-responsive">
+					</span>
+				</div>
 
 			</div>
 		</div>
@@ -101,7 +129,8 @@
 <main>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 aboutMe" id="anchorMe">
+			<span id="anchorMe"></span>
+			<div class="col-md-12 aboutMe">
 				<h1 class="col-md-12 blockTitle">Обо мне</h1>
 				<div class="col-md-10">
 					<div class="achievementsCont">
@@ -139,17 +168,35 @@
 						<p><span class="rate">1 место</span> на Всеукраинском конкурсе - защите научно - исследовательских работ МАН 2014 (секция: математика).</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 education" id="education">
-				<h1 class="col-md-12 blockTitle">Обучение и преимущества</h1>
 				<div class="col-md-6">
 					<div class="achievementsCont">
 						<h1 class="ico"><i class="fa fa-book" aria-hidden="true"></i></h1>
 						<p>За годы моей практики я преподавала детям разных возрастов, готовила к <span class="rate">экзаменам</span>, <span class="rate">олимпиадам</span>, <span class="rate">турнирам</span> и <span class="rate">конкурсу-защите МАН</span>.</p>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-heart" aria-hidden="true"></i></h1>
+						<p><span class="rate">Мои ученики</span> с оценок 5 - 7 выходят на 9 —11, успешно сдают ДПА и ЗНО, становятся призерами математических олимпиад и конкурса научно —исследовательских работ МАН и самое главное  — <span class="rate">ЛЮБЯТ МАТЕМАТИКУ</span>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+
+		<div class="row">
+			<span id="prices"></span>
+			<div class="col-md-12 prices">
+				<h1 class="col-md-12 blockTitle">Условия</h1>
+				<div class="col-md-7">
+					<div class="achievementsCont">
+						<h1 class="ico"><i class="fa fa-money" aria-hidden="true"></i></h1>
+						<p>Индивидуальные занятия у меня на территории: <span class="rate">120 грн/час</span></p>
+						<p>Индивидуальная подготовка к важному экзамену у меня на территории: <span class="rate">150 грн/час</span></p>
+						<p>Занятия в мини-группах 2-3 человека у меня на территории: <span class="rate">60 грн/час</span></p>
+						<p>Индивидуальные занятия по скайпу: <span class="rate">120 грн/час</span></p>
 					</div>
 				</div>
 				<div class="col-md-3">
@@ -158,17 +205,37 @@
 						<p>Языки преподавания: <span class="rate">русский, украинский, английский</span>.</p>
 					</div>
 				</div>
-				<div class="col-md-9">
+			</div>
+		</div>
+
+		<div class="row">
+			<span id="contacts"></span>
+			<div class="col-md-12 contacts">
+				<h1 class="col-md-12 blockTitle">Контакты</h1>
+				
+				<div class="col-md-12">
 					<div class="achievementsCont">
-						<h1 class="ico"><i class="fa fa-heart" aria-hidden="true"></i></h1>
-						<p><span class="rate">Мои ученики</span> с оценок 5 - 7 выходят на 9 —11, успешно сдают ДПА и ЗНО, становятся призерами математических олимпиад и конкурса научно —исследовательских работ МАН и самое главное  — <span class="rate">ЛЮБЯТ МАТЕМАТИКУ</span>.</p>
+						<ul class="contacts__list">
+							<li><a href="skype:anne_moretz?chat" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/messages/t/annakrymova27" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a href="https://vk.com/im?sel=120327525" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="https://telegram.me/annakrymova" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=380955044769" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+							<li><a href="+38-095-504-47-69"><i class="fa fa-phone" aria-hidden="true"></i></a> +38-095-504-47-69</li>
+						</ul>
 					</div>
+				</div>
+
+				<div class="col-md-10 map__google">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2156.998253446651!2d36.255738498014516!3d49.99040330437591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a093f76ae991%3A0x5b3b2539497cdd51!2z0JzQvtGB0LrQvtCy0YHRjNC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCA2NGEsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1suk!2sua!4v1507140693586" width="100%" height="450" allowfullscreen></iframe>
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> метро Защитников Украины (бывш. Площадь Восстания), Московский проспект, 64А</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-12 reviews" id="reviews">
+			<span id="reviews"></span>
+			<div class="col-md-12 reviews">
 				<h1 class="col-md-12 blockTitle">Отзывы</h1>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
@@ -399,46 +466,6 @@
 			      <span class="sr-only">Next</span>
 			    </a>
 			  </div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12 prices" id="prices">
-				<h1 class="col-md-12 blockTitle">Цены</h1>
-				
-				<div class="col-md-8">
-					<div class="achievementsCont">
-						<h1 class="ico"><i class="fa fa-money" aria-hidden="true"></i></h1>
-						<p>Индивидуальные занятия у меня на территории: <span class="rate">120 грн/час</span></p>
-						<p>Индивидуальная подготовка к важному экзамену у меня на территории: <span class="rate">150 грн/час</span></p>
-						<p>Занятия в мини-группах 2-3 человека у меня на территории: <span class="rate">60 грн/час</span></p>
-						<p>Индивидуальные занятия по скайпу: <span class="rate">120 грн/час</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12 contacts" id="contacts">
-				<h1 class="col-md-12 blockTitle">Контакты</h1>
-				
-				<div class="col-md-12">
-					<div class="achievementsCont">
-						<ul class="contacts__list">
-							<li><a href="skype:anne_moretz?chat"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.facebook.com/messages/t/annakrymova27"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a href="https://vk.com/im?sel=120327525"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="https://telegram.me/annakrymova"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=380955044769"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-							<li><a href="+38-095-504-47-69"><i class="fa fa-phone" aria-hidden="true"></i></a> +38-095-504-47-69</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-10 map__google">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2156.998253446651!2d36.255738498014516!3d49.99040330437591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a093f76ae991%3A0x5b3b2539497cdd51!2z0JzQvtGB0LrQvtCy0YHRjNC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCA2NGEsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1suk!2sua!4v1507140693586" width="100%" height="450" allowfullscreen></iframe>
-					<p><i class="fa fa-map-marker" aria-hidden="true"></i> метро Защитников Украины (бывш. Площадь Восстания), Московский проспект, 64А</p>
-				</div>
 			</div>
 		</div>
 	</div>
