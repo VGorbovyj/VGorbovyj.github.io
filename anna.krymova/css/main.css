@@ -171,7 +171,6 @@ main .container-fluid .row {
 }
 
 .aboutMe,
-.education,
 .reviews,
 .prices,
 .contacts,
@@ -461,6 +460,10 @@ p .rate {
   display: none;
 }
 
+.contacts {
+  margin-top: 31px;
+}
+
 .contacts div[class*="col"] .achievementsCont:hover {
   background-color: transparent;
   box-shadow: none;
@@ -609,6 +612,14 @@ footer a:hover {
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.2);
 }
 
+span#anchorMe,
+span#reviews,
+span#prices,
+span#contacts {
+  margin-top: -9px;
+  display: block;
+}
+
 .carousel-control {
   color: #111111;
 }
@@ -640,7 +651,7 @@ footer a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .diplomas .diplomas__block img {
@@ -758,6 +769,13 @@ footer a:hover {
   .contacts__list li:last-child i {
     font-size: 18px;
   }
+  span#anchorMe,
+  span#reviews,
+  span#prices,
+  span#contacts {
+    margin-top: 0;
+    display: inherit;
+  }
 }
 
 @media screen and (min-width: 479px) and (max-width: 640px) {
@@ -815,6 +833,13 @@ footer a:hover {
     z-index: -5;
     opacity: 0;
   }
+  span#anchorMe,
+  span#reviews,
+  span#prices,
+  span#contacts {
+    margin-top: 0;
+    display: inherit;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
@@ -865,5 +890,12 @@ footer a:hover {
     display: none;
     z-index: -5;
     opacity: 0;
+  }
+  span#anchorMe,
+  span#reviews,
+  span#prices,
+  span#contacts {
+    margin-top: 0;
+    display: inherit;
   }
 }
