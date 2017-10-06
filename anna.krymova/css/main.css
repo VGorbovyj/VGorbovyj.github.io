@@ -346,6 +346,10 @@ p .rate {
   color: #111111;
 }
 
+.reviewContainer .student .studentsNumber {
+  pointer-events: none;
+}
+
 .reviewContainer .studentsQuote {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -536,6 +540,27 @@ p .rate {
 
 .contacts__list li:nth-child(5):hover a i {
   color: #25d366;
+}
+
+.contacts__list li:last-child {
+  display: block;
+  font-size: 36px;
+  color: rgba(17, 17, 17, 0.6);
+  width: 100%;
+  text-align: center;
+}
+
+.contacts__list li:last-child:hover {
+  color: #59267c;
+}
+
+.contacts__list li:last-child:hover a {
+  cursor: normal;
+  pointer-events: none;
+}
+
+.contacts__list li:last-child:hover a i {
+  color: #59267c;
 }
 
 .map__google {
