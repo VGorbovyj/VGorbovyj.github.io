@@ -769,12 +769,12 @@ span#contacts {
   .contacts__list li:last-child i {
     font-size: 18px;
   }
-  span#anchorMe,
-  span#reviews,
-  span#prices,
-  span#contacts {
-    margin-top: 0;
-    display: inherit;
+  .aboutMe,
+  .reviews,
+  .prices,
+  .contacts,
+  .map {
+    margin-top: 49px;
   }
 }
 
@@ -837,8 +837,8 @@ span#contacts {
   span#reviews,
   span#prices,
   span#contacts {
-    margin-top: 0;
-    display: inherit;
+    margin-top: -30px;
+    display: block;
   }
 }
 
@@ -895,7 +895,7 @@ span#contacts {
   span#reviews,
   span#prices,
   span#contacts {
-    margin-top: 0;
-    display: inherit;
+    margin-top: -30px;
+    display: block;
   }
 }
