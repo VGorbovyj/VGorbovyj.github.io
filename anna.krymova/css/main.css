@@ -325,10 +325,6 @@ p .rate {
 
 .reviewContainer .studentsQuote p {
   font-size: 14px;
-}
-
-.reviewContainer .studentsQuote p {
-  font-size: 14px;
   text-align: justify;
   text-shadow: none;
   font-style: italic;
@@ -377,8 +373,10 @@ p .rate {
 
 .reviewContainer .teachersAnswer {
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .reviewContainer p {
@@ -632,6 +630,11 @@ span#contacts {
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
+}
+
+.glyphicon-chevron-right::before,
+.glyphicon-chevron-left::before {
+  display: none;
 }
 
 .diplomas {
