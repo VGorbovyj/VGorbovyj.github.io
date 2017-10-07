@@ -45,18 +45,26 @@ header.container-fluid {
 
 .intro {
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .intro .col-md-12 {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: start;
   align-items: flex-start;
   text-align: center;
   margin: 0;
@@ -65,9 +73,13 @@ header.container-fluid {
 }
 
 .intro nav[class*="nav"] {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: start;
   align-items: flex-start;
   background: rgba(17, 17, 17, 0.8);
   border-bottom: 1px solid rgba(17, 17, 17, 0.9);
@@ -112,9 +124,13 @@ header.container-fluid {
 }
 
 .intro div[class*="ava"] {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 90px;
   padding-bottom: 60px;
@@ -129,9 +145,13 @@ header.container-fluid {
 }
 
 .intro div[class*="text"] {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -179,9 +199,13 @@ main .container-fluid .row {
 .prices,
 .contacts,
 .map {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin-top: 30px;
   padding: 0;
@@ -251,9 +275,13 @@ p .rate {
 }
 
 .reviewContainer {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding: 0;
   box-shadow: 0 1px 2px rgba(17, 17, 17, 0);
@@ -267,9 +295,13 @@ p .rate {
 }
 
 .reviewContainer .student {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
   padding-top: 15px;
@@ -281,9 +313,13 @@ p .rate {
 }
 
 .reviewContainer .student:nth-child(1), .reviewContainer .student:nth-child(2) {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
@@ -348,9 +384,13 @@ p .rate {
 }
 
 .reviewContainer .teacher {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
   padding-top: 15px;
@@ -474,9 +514,13 @@ p .rate {
 .contacts__list {
   margin: 0;
   list-style-type: none;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-left: 0;
 }
@@ -496,6 +540,7 @@ p .rate {
 
 .contacts__list li a i:hover {
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.4);
+  -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
@@ -642,9 +687,13 @@ span#contacts {
 }
 
 .diplomas {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -654,9 +703,13 @@ span#contacts {
 
 .diplomas .diplomas__block {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center;
   margin: 5px 0;
 }
@@ -703,10 +756,13 @@ span#contacts {
     width: 60%;
   }
   .intro {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
@@ -715,9 +771,13 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul {
     padding-left: 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
@@ -743,6 +803,7 @@ span#contacts {
     border-bottom: 2px solid transparent;
   }
   .intro div[class*="ava"] {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-top: 60px;
   }
@@ -790,10 +851,13 @@ span#contacts {
     padding: 15px 0;
   }
   .intro {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
@@ -802,9 +866,13 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul {
     padding-left: 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
@@ -851,10 +919,13 @@ span#contacts {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
   .intro {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
@@ -863,9 +934,13 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul {
     padding-left: 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
