@@ -17,9 +17,6 @@ body {
   font-family: 'Roboto', Georgia, Arial, sans-serif;
   font-weight: 400;
   background: #f5f5f5;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 a {
@@ -34,67 +31,56 @@ a:active {
   text-decoration: none;
 }
 
-header.container-fluid {
-  padding: 0;
-  margin: 0;
+ul {
+  list-style-type: none;
 }
 
 .row {
   margin: 0;
 }
 
+header.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
 .intro {
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .intro .col-md-12 {
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: start;
   align-items: flex-start;
-  text-align: center;
   margin: 0;
   padding: 0;
-  width: 100%;
+  text-align: center;
 }
 
 .intro nav[class*="nav"] {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: start;
   align-items: flex-start;
-  background: rgba(17, 17, 17, 0.8);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.9);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 25;
+  background: rgba(17, 17, 17, 0.8);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.9);
   box-shadow: 0 1px 2px rgba(17, 17, 17, 0.6);
+  z-index: 25;
 }
 
 .intro nav[class*="nav"] ul {
-  margin: 0;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  list-style-type: none;
+  margin: 8px 0;
 }
 
 .intro nav[class*="nav"] ul li {
@@ -115,8 +101,8 @@ header.container-fluid {
 
 .intro nav[class*="nav"] ul li a:hover {
   color: white;
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.9);
   border-bottom: 2px solid #0f8896;
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.9);
 }
 
 .intro nav[class*="nav"] .anchors {
@@ -124,13 +110,9 @@ header.container-fluid {
 }
 
 .intro div[class*="ava"] {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-top: 90px;
   padding-bottom: 60px;
@@ -145,13 +127,9 @@ header.container-fluid {
 }
 
 .intro div[class*="text"] {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -170,18 +148,10 @@ header.container-fluid {
   font-size: 18px;
   color: #111111;
   background: white;
-  box-shadow: 0 2px 2px rgba(17, 17, 17, 0.4);
   border-radius: 4px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-}
-
-.intro div[class*="text"] p .mathColor {
-  color: #f46a6a;
-}
-
-.intro div[class*="text"] p .infColor {
-  color: #0f8896;
+  box-shadow: 0 2px 2px rgba(17, 17, 17, 0.4);
 }
 
 main .container-fluid {
@@ -199,13 +169,9 @@ main .container-fluid .row {
 .prices,
 .contacts,
 .map {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: start;
   align-items: flex-start;
   margin-top: 30px;
   padding: 0;
@@ -214,22 +180,22 @@ main .container-fluid .row {
 .blockTitle {
   width: 100vw;
   margin: 0;
-  text-align: center;
-  font-size: 42px;
-  color: white;
   margin-bottom: 45px;
   padding: 25px 0;
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
+  font-size: 42px;
+  color: white;
+  text-align: center;
   background-color: rgba(17, 17, 17, 0.75);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(17, 17, 17, 0.8);
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
 }
 
 div[class*="col"] .achievementsCont {
+  height: 100%;
+  margin-bottom: 15px;
   padding: 15px;
   box-shadow: 0 1px 2px rgba(17, 17, 17, 0);
-  margin-bottom: 15px;
-  height: 100%;
 }
 
 div[class*="col"] .achievementsCont:hover {
@@ -256,9 +222,9 @@ h1.ico {
 }
 
 h1.ico i {
-  color: rgba(17, 17, 17, 0.75);
   padding-bottom: 30px;
   font-size: 60px;
+  color: rgba(17, 17, 17, 0.75);
   border-bottom: 2px solid rgba(17, 17, 17, 0.4);
 }
 
@@ -269,24 +235,20 @@ p {
 }
 
 p .rate {
-  letter-spacing: .5px;
-  color: #0f8896;
   font-weight: 700;
+  color: #0f8896;
+  letter-spacing: .5px;
 }
 
 .reviewContainer {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -ms-flex-align: start;
   align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
   padding: 0;
   box-shadow: 0 1px 2px rgba(17, 17, 17, 0);
-  margin-bottom: 30px;
-  width: 100%;
 }
 
 .reviewContainer:hover {
@@ -295,39 +257,31 @@ p .rate {
 }
 
 .reviewContainer .student {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
   background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
 
 .reviewContainer .student:nth-child(1), .reviewContainer .student:nth-child(2) {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
 
 .reviewContainer .student:nth-child(1) h1, .reviewContainer .student:nth-child(2) h1 {
   margin: 0;
-  font-size: 20px;
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .reviewContainer .student:nth-child(1) h5, .reviewContainer .student:nth-child(2) h5 {
@@ -336,10 +290,10 @@ p .rate {
 
 .reviewContainer .student img {
   width: 100%;
+  margin-top: -30px;
+  margin-bottom: 10px;
   border: 3px solid rgba(15, 136, 150, 0.8);
   border-radius: 50%;
-  margin-bottom: 10px;
-  margin-top: -30px;
   box-shadow: 0 2px 2px rgba(17, 17, 17, 0.65);
 }
 
@@ -365,32 +319,28 @@ p .rate {
 
 .reviewContainer .studentsQuote p {
   font-size: 14px;
-  text-align: justify;
-  text-shadow: none;
   font-style: italic;
   color: #111111;
+  text-align: justify;
+  text-shadow: none;
 }
 
 .reviewContainer .studentsQuote p::before {
   content: '« ';
-  color: #0f8896;
   font-size: 20px;
+  color: #0f8896;
 }
 
 .reviewContainer .studentsQuote p::after {
   content: ' »';
-  color: #0f8896;
   font-size: 20px;
+  color: #0f8896;
 }
 
 .reviewContainer .teacher {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
   padding-top: 15px;
@@ -408,51 +358,51 @@ p .rate {
 }
 
 .reviewContainer .teacher img {
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
-  border-radius: 50%;
   border: 3px solid rgba(15, 136, 150, 0.8);
+  border-radius: 50%;
 }
 
 .reviewContainer .teachersAnswer {
-  text-align: right;
-  font-size: 12px;
-  color: white;
   margin-right: 0;
   padding-right: 0;
+  font-size: 12px;
+  color: white;
+  text-align: right;
 }
 
 .reviewContainer p {
-  text-shadow: none;
   font-style: italic;
+  text-shadow: none;
 }
 
 .reviewContainer p::before {
   content: '« ';
-  color: #0f8896;
   font-size: 20px;
+  color: #0f8896;
 }
 
 .reviewContainer p::after {
   content: ' »';
-  color: #0f8896;
   font-size: 20px;
+  color: #0f8896;
 }
 
 .toggleReview {
   width: 100%;
+  text-align: center;
   background: rgba(17, 17, 17, 0.8);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  text-align: center;
 }
 
 .toggleReview a {
-  color: white;
-  font-size: 22px;
   padding-bottom: 5px;
   padding-top: 2px;
+  font-size: 22px;
+  color: white;
 }
 
 .toggleReview a:hover {
@@ -470,19 +420,19 @@ p .rate {
 }
 
 .openReview {
-  cursor: pointer;
   width: 100%;
+  text-align: center;
   background: rgba(17, 17, 17, 0.8);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  text-align: center;
+  cursor: pointer;
 }
 
 .openReview i {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 22px;
   padding-bottom: 5px;
   padding-top: 2px;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .openReview:hover i {
@@ -512,21 +462,16 @@ p .rate {
 }
 
 .contacts__list {
-  margin: 0;
-  list-style-type: none;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
+  margin: 0;
   padding-left: 0;
 }
 
 .contacts__list li {
-  margin: 15px 15px;
+  margin: 15px;
   padding: 5px;
 }
 
@@ -540,7 +485,6 @@ p .rate {
 
 .contacts__list li a i:hover {
   text-shadow: 0 1px 1px rgba(17, 17, 17, 0.4);
-  -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
@@ -566,9 +510,9 @@ p .rate {
 
 .contacts__list li:last-child {
   display: block;
+  width: 100%;
   font-size: 26px;
   color: rgba(17, 17, 17, 0.6);
-  width: 100%;
   text-align: center;
 }
 
@@ -615,32 +559,31 @@ p .rate {
 }
 
 footer {
-  background: rgba(17, 17, 17, 0.9);
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
-  background-color: rgba(17, 17, 17, 0.9);
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
   padding-top: 15px;
   padding-bottom: 5px;
+  background: rgba(17, 17, 17, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
 }
 
 footer p {
-  color: white;
   font-size: 14px;
   font-weight: 100;
+  color: white;
   text-align: right;
 }
 
 footer a {
-  color: #0f8896;
   font-weight: 400;
+  color: #0f8896;
   letter-spacing: .5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 footer a:hover {
   color: #0f8896;
-  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 1px rgba(17, 17, 17, 0.8);
 }
 
 .toTheTop {
@@ -663,8 +606,8 @@ span#anchorMe,
 span#reviews,
 span#prices,
 span#contacts {
-  margin-top: -9px;
   display: block;
+  margin-top: -9px;
 }
 
 .carousel-control {
@@ -687,13 +630,9 @@ span#contacts {
 }
 
 .diplomas {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -702,15 +641,11 @@ span#contacts {
 }
 
 .diplomas .diplomas__block {
-  height: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-align: center;
   align-items: center;
+  height: 100%;
   margin: 5px 0;
 }
 
@@ -748,40 +683,29 @@ span#contacts {
 
 @media screen and (min-width: 241px) and (max-width: 478px) {
   .blockTitle {
-    font-size: 28px;
     padding: 15px 0;
-  }
-  .main-nav {
-    right: 0;
-    width: 60%;
+    font-size: 28px;
   }
   .intro {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .intro nav[class*="nav"] ul {
-    padding-left: 0;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
     margin-bottom: 2px;
+    padding-left: 0;
     list-style-type: none;
   }
   .intro nav[class*="nav"] ul li {
@@ -797,19 +721,18 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul li a {
     display: block;
-    text-decoration: none;
-    padding: 5px 5px;
+    padding: 5px;
     color: white;
+    text-decoration: none;
     border-bottom: 2px solid transparent;
   }
   .intro div[class*="ava"] {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-top: 60px;
   }
   .intro div[class*="ava"] h1 {
-    font-weight: 100;
     font-size: 44px;
+    font-weight: 100;
   }
   .intro div[class*="ava"] h1:first-of-type {
     padding-right: 0;
@@ -828,8 +751,8 @@ span#contacts {
   }
   .toTheTop {
     display: none;
-    z-index: -5;
     opacity: 0;
+    z-index: -5;
   }
   .contacts__list li:last-child {
     font-size: 18px;
@@ -851,32 +774,25 @@ span#contacts {
     padding: 15px 0;
   }
   .intro {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .intro nav[class*="nav"] ul {
-    padding-left: 0;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
     margin-bottom: 2px;
+    padding-left: 0;
     list-style-type: none;
   }
   .intro nav[class*="nav"] ul li {
@@ -892,9 +808,9 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul li a {
     display: block;
-    text-decoration: none;
-    padding: 5px 5px;
+    padding: 5px;
     color: white;
+    text-decoration: none;
     border-bottom: 2px solid transparent;
   }
   .reviewContainer {
@@ -905,46 +821,39 @@ span#contacts {
   }
   .toTheTop {
     display: none;
-    z-index: -5;
     opacity: 0;
+    z-index: -5;
   }
   span#anchorMe,
   span#reviews,
   span#prices,
   span#contacts {
-    margin-top: -30px;
     display: block;
+    margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
   .intro {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
   }
   .intro .col-md-12 {
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .intro nav[class*="nav"] {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   .intro nav[class*="nav"] ul {
-    padding-left: 0;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     margin-top: 2px;
     margin-bottom: 2px;
+    padding-left: 0;
     list-style-type: none;
   }
   .intro nav[class*="nav"] ul li {
@@ -960,9 +869,9 @@ span#contacts {
   }
   .intro nav[class*="nav"] ul li a {
     display: block;
-    text-decoration: none;
     padding: 5px 5px;
     color: white;
+    text-decoration: none;
     border-bottom: 2px solid transparent;
   }
   .reviewContainer {
@@ -970,14 +879,14 @@ span#contacts {
   }
   .toTheTop {
     display: none;
-    z-index: -5;
     opacity: 0;
+    z-index: -5;
   }
   span#anchorMe,
   span#reviews,
   span#prices,
   span#contacts {
-    margin-top: -30px;
     display: block;
+    margin-top: -30px;
   }
 }
