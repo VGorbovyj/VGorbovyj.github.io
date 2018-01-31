@@ -1,0 +1,257 @@
+* {
+	box-sizing: border-box;
+	transition: all .3s;
+	font-size: 1em;
+}
+
+body {
+	background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.brown-bg {
+	background-color: rgba(58, 30, 30, 1);;
+}
+
+.less-white-bg {
+	background-color: #f5f5f5;
+}
+
+.intro-text {
+	padding: 60px 90px;
+	font-size: 1.2em;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+
+.img-bg {
+	width: 100%;
+	height: 570px;
+	background: url("../img/LvivUniversity.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.main-navigation ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.main-navigation ul li {
+	display: inline-block;
+	margin: 0 15px
+}
+
+
+.main-navigation ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+}
+
+.main-navigation ul li a:hover {
+	background-color: #fff;
+	color: rgba(58, 30, 30, 1);;
+}
+
+.main-navigation ul li:first-child {
+	margin-right: 100px;
+}
+.main-navigation ul li:first-child a:hover {
+	background-color: transparent;
+}
+
+
+.action-row {
+	height: 100%;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+}
+
+
+.mega-action {
+	background-color: rgba(58, 30, 30, .8);
+	border-radius: 4px;
+	border: none;
+	box-shadow: 0 2px 2px rgba(0,0,0, .6);
+	font-size: 2em;
+	padding: 15px 30px;
+	color: #fff;
+}
+
+.mega-action:hover {
+	background-color: rgba(58, 30, 30, 1);;
+}
+
+.row-title {
+	font-size: 2.6em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.img-bg .row {
+	width: 100%;
+}
+
+.img-bg .col-md-12 h1 {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0, .8);
+	font-size: 2.6em;
+	background-color: rgba(0,0,0, .4);
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+.icons-row,
+.videos-row,
+.map-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-box img {
+	background-color: rgba(58, 30, 30, 1);
+	border-radius: 50%;
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.videos-row {
+	align-items: flex-start;
+	padding-bottom: 240px;
+}
+
+.video-box a {
+	display: block;
+	width: 100%;
+	height: 160px;
+	background-color: #000;
+}
+
+.video-box h1 {
+	text-align: center;
+}
+
+.gids-magic {
+	margin-top: -200px;
+}
+
+.gids-wrapper{
+	width: 86.66666667%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gids-column {
+	padding: 0 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: rgba(58, 30, 30, 1);
+	border-left:  2px dahsed #fff;
+	position: relative;
+}
+
+.gids-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px dashed #fff;
+	border-right: 2px dashed #fff;
+	padding-bottom: 40px;
+}
+
+.last-guid {
+	border-bottom: 2px dashed #fff;;
+	margin-bottom: 10px;
+}
+
+.gids-box img {
+	margin: 60px 0 20px 0;
+	width: 140px;
+	height: 140px;
+	background-color: #fff;
+	border-radius: 50%
+}
+
+.gids-box h1 {
+	color: #fff;
+}
+
+.gids-box p {
+	padding: 0 60px;
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.gids-button a {
+	display: block;
+	width: 100%;
+	padding: 20px 40px;
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(58, 30, 30, 1);
+	font-weight: 700;
+	background-color: #fff;
+	position: absolute;
+	bottom: -20px;
+	box-shadow: 0 2px 2px rgba(0,0,0, .6);
+}
+
+.gids-button a:hover {
+	bottom: -30px;
+	box-shadow: 0 2px 2px rgba(0,0,0, .8);
+}
+
+.map {
+	margin-top: 60px;
+	padding-bottom: 60px;
+}
+
+.map iframe {
+	width: 100%;
+	height: 400px;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0, .6)
+}
+
+.copyright-box {
+	text-align: center;
+}
