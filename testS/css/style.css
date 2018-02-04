@@ -1,0 +1,587 @@
+* {
+	box-sizing: border-box;
+	transition: all .3s;
+	font-size: 1em;
+}
+
+body {
+	background-color: #fff;
+	padding-top: 92px;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.white-bg {
+	background-color: #fff;
+	padding-bottom: 30px;
+	border-top: 1px solid rgba(0,0,0, .05);
+	border-bottom: 1px solid rgba(0,0,0, .1);
+}
+
+.brown-bg {
+	background-color: rgb(102, 0, 102);
+}
+
+.less-white-bg {
+	background-color: #f5f5f5;
+}
+
+.intro-text {
+	padding: 60px 90px;
+	font-size: 1.2em;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.img-bg {
+	width: 100%;
+	height: 570px;
+	background: url("../img/LvivUniversity.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.flow-menu {
+	flex-flow: row wrap;
+}
+
+.nav-row {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 25;
+	box-shadow: 0 0 2px rgba(0,0,0, .6);
+}
+
+.main-navigation {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.main-navigation ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.main-navigation ul li {
+	display: inline-block;
+	margin: 0 15px;
+	transform: skewX(-15deg);
+}
+
+.main-navigation ul li:hover {
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0, .6);
+}
+
+.main-navigation ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	transform: skewX(15deg);
+}
+
+.main-navigation ul li:hover a {
+	background-color: transparent;
+	color: rgba(58, 30, 30, 1);
+}	
+
+.main-navigation ul li:first-child {
+	font-size: 1em;
+	transform: skewX(15deg);
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0, .6);
+	pointer-events: none;
+}
+
+.main-navigation ul li:first-child a {
+	color: rgba(102, 0, 102, 1);
+	transform: skewX(-15deg);
+}
+
+.menu-scroll {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 136px;
+	margin-top: -5px;
+}
+
+.menu-scroll li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.menu-scroll a {
+	display: block;
+	font-size: .8em;
+	color: rgba(255,255,255, .6);
+	border-bottom: 1px solid rgba(255,255,255, .4);
+}
+
+.menu-scroll a:hover {
+	color: #fff;
+	border-color: #fff;
+	transform: translateY(-3px);
+}
+
+.action-row {
+	height: 100%;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+}
+
+.lobster-font {
+	font-family: 'Lobster', cursive;
+	letter-spacing: 1px;
+}
+
+.mega-action {
+	box-shadow: 0 0 2px rgba(0,0,0, .6);
+	font-size: 2em;
+	padding: 15px 30px;
+	color: #fff;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0, .4);
+	font-size: 2em;
+	text-shadow: 0 1px 1px rgba(0,0,0, .8);
+}
+
+.mega-action:hover {
+	color: #fff;
+	background-color: rgba(102, 0, 102, .4);
+	transform: translateY(-4px);
+}
+
+.row-title {
+	font-size: 2.6em;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(102, 0, 102);
+	text-shadow: 0 1px 1px rgba(0,0,0, .2);
+}
+
+
+.img-bg .row {
+	width: 100%;
+}
+
+.img-bg .col-md-12 h1 {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0, .8);
+	font-size: 2.6em;
+	background-color: rgba(0,0,0, .4);
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+.icons-row,
+.videos-row,
+.map-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-box i {
+	display: inline;
+	color: #fafafa;
+	text-shadow: 0 0 4px rgba(0,0,0, .6);
+}
+
+.icon-box img {
+	background-color: rgba(58, 30, 30, 1);
+	border-radius: 50%;
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.videos-row {
+	align-items: flex-start;
+	padding-bottom: 40px;
+}
+.video-box:hover ul {
+	box-shadow: 0 1px 2px rgba(0,0,0, .4);
+}
+.video-box:hover img {
+	box-shadow: 0 -1px 2px rgba(0,0,0, .4);
+}
+.video-box:hover .cover-top {
+	background-color: rgba(58, 30, 30, .2);
+}
+.video-box a {
+	display: block;
+	width: 100%;
+	height: 160px;
+	background-color: #000;
+}
+
+.video-box ul {
+	padding: 20px 45px;
+	background-color: #fff;
+}
+
+.video-box h1 {
+	text-align: center;
+}
+
+.poster-box {
+	position: relative;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.cover-top {
+	width: 100%;
+	height: 180px;
+	position: absolute;
+	background-color: rgba(58, 30, 30, .6);
+	z-index: 3;
+	margin-right: 30px;
+}
+.poster-box h1 {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	margin-top: 50px;
+	z-index: 5;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0, .8);
+}
+.mini-poster {
+	background-color: #fff;
+	margin: 0;
+}
+.poster-box img {
+	min-width: 100%;
+	height: 180px;
+	z-index: 1;
+}
+
+.gids-wrapper{
+	width: 86.66666667%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gids-parts {
+	padding: 0 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+
+
+.gids-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+.gids-box i {
+	width: 90px;
+	height: 90px;
+	border: 1px solid rgba(0,0,0, .1);
+	padding: 5px;
+	border-radius: 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	line-height: 2.3;
+	font-size: 2.4em;
+	color: #fff;
+	text-shadow: 0 0 2px rgba(0,0,0, .4);
+	background-color: rgba(0,0,0, .05);
+}
+img[alt="Ukraine icon"] {
+	margin-top: -5px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 0;
+	width: 300px;
+	height: auto;
+}
+.gids-box h1 {
+	color: rgba(0,0,0, .8);
+	margin: 0;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.gids-box p {
+	margin: 10px 0;
+	padding: 0 60px;
+	font-size: 1.2em;
+}
+
+.gids-button a {
+	display: block;
+	width: 100%;
+	padding: 20px 40px;
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(58, 30, 30, 1);
+	font-weight: 700;
+	background-color: #fff;
+	position: absolute;
+	bottom: -20px;
+	box-shadow: 0 2px 2px rgba(0,0,0, .6);
+}
+
+.gids-button a:hover {
+	bottom: -30px;
+	box-shadow: 0 2px 2px rgba(0,0,0, .8);
+}
+
+.map .row {
+	margin: 0;
+}
+
+.map-row {
+	margin: 0;
+	padding: 0;
+}
+
+.map iframe {
+	width: 100%;
+	height: 440px;
+	border-top: 1px solid rgba(255,255,255, 1);
+	border-bottom: 1px solid rgba(255,255,255, 1);
+	box-shadow: 0 0 4px rgba(0,0,0, .4);
+}
+
+.white-bg:last-of-type {
+	padding-bottom: 0;
+}
+
+.contacts {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts li {
+	display: inline-block;
+	margin: 10px 15px;
+}
+
+img[alt="RecPhoto"] {
+	width: 120px;
+	height: 120px;
+	border: 3px solid rgba(0, 0, 0, .15);
+	border-radius: 50%;
+}
+
+.contacts li a {
+	display: inline-block;
+	padding: 15px 30px;
+}
+
+.contacts li a:hover {
+	color: #fff;
+}
+
+.sub-contacts-list {
+	margin-left: -35px;
+	padding: 0 5px;
+	padding-right: 0;
+	border-right: 1px solid rgba(0,0,0, .1);
+}
+
+.sub-contacts-list li {
+	display: block;
+	font-size: 1.4em;
+}
+
+.sub-contacts-list li:nth-child(2) {
+	display: block;
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.sub-contacts-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sub-contacts-menu li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: .8em;
+	width: 50%;
+}
+
+.sub-contacts-menu li:hover {
+	text-shadow: 0 1px 5px rgba(0,0,0, .8);
+	background-color: rgba(0,0,0, .8);
+}
+
+.sub-contacts-menu li:hover a {
+	color: #fff;
+	
+}
+
+.sub-contacts-menu li:nth-child(2) {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-size: .8em;
+	border: none;
+}
+
+.sub-contacts-menu li a {
+	width: 100%;
+	font-size: 1em;
+	padding: 5px 10px;
+	margin: 0;
+	color: rgba(0, 0, 0, .35);
+}
+
+.sub-contacts-menu li a:hover {
+	background-color: transparent;
+}
+
+.copyright-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.services-list {
+	margin-top: 0;
+	list-style-type: none;
+	border-top: 4px solid rgb(102, 0, 102);
+	border-bottom: 4px solid rgb(102, 0, 102);
+}
+
+.services-list li {
+	display: block;
+	margin: 2px 0;
+	padding: 10px 15px;
+	font-size: 1.2em;
+	background-color: rgba(255,255,255, .6);
+}
+
+.services-list li:hover {
+	box-shadow: 0 0 2px rgba(0,0,0, .4);
+	transform: scale(1.03);
+	background-color: rgba(255,255,255, 1);
+}
+
+.documents-list {
+	list-style-type: decimal;
+	margin-top: 0;
+	padding-left: 25px;
+	margin-bottom: 40px;
+}
+
+.documents-list li,
+.docs-links p {
+	font-size: 1.2em;
+}
+
+.documents-list li a,
+.docs-links p a {
+	border-bottom: 1px solid rgba(0,0,0, .2);
+}
+
+.documents-list li a:hover,
+.docs-links p a:hover {
+	color: rgb(102, 0, 102);
+	border-bottom: 1px solid rgba(0,0,0, .6);
+}
+
+.docs-title {
+	font-size: 1.4em;
+}
+
+.docs-title:first-of-type {
+	margin-bottom: 0;
+}
+
+.docs-title:last-of-type {
+	margin-left: -25px;
+}
+
+img[alt="How to apply to study in Ukraine"] {
+	margin: 30px 0;
+	border: 6px solid #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0, .4);
+}
+
+.lang-menu {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+}
+
+.lang-menu li {
+	display: block;
+	opacity: .6;
+}
+
+.lang-menu li:hover {
+	opacity: 1;
+}
+
+.lang-menu li:first-child a {
+	padding: 2px 6px;
+	font-size: .9em;
+	pointer-events: auto;
+}
