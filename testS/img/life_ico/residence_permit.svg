@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#330033;stroke-width:6;stroke-miterlimit:10;}
-	.st1{fill:#330033;}
+	.st0{fill:none;stroke:#6C76AC;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#6C76AC;}
 	.st2{fill:none;stroke:#424242;stroke-width:3;stroke-miterlimit:10;}
 </style>
-<g id="Слой_1">
+<g id="Слой_1_1_">
 </g>
-<g id="Слой_2">
+<g id="Слой_2_1_">
 	<path class="st0" d="M188.3,171.3H40c-6.6,0-12-5.4-12-12V76c0-6.6,5.4-12,12-12h148.4c6.6,0,12,5.4,12,12v83.3
 		C200.3,165.9,194.9,171.3,188.3,171.3z"/>
 	<path class="st1" d="M169.5,80L117,131.3h19.4V177h67.3v-45.7H222L169.5,80z M169.7,162.9L169.7,162.9L169.7,162.9
-		c-12.5,0-20.5,6.7-20.5,5.7c0-1.9,5.8-16.6,7.6-16.9c0.5,0,1-0.2,1.5-0.4l2.1-1.1c0.4-0.2,0.7-0.7,0.7-1.2l0-4.9c0,0,3.3,2.3,4.3,3
+		c-12.5,0-20.5,6.7-20.5,5.7c0-1.9,5.8-16.6,7.6-16.9c0.5,0,1-0.2,1.5-0.4l2.1-1.1c0.4-0.2,0.7-0.7,0.7-1.2v-4.9c0,0,3.3,2.3,4.3,3
 		l-5-4.7c0,0-4.6-5.7-4-19.6c0.6-12.9,12.8-12.9,13.3-12.9c0.6,0,12.8,0,13.3,12.9c0.6,13.9-4,19.6-4,19.6l-5,4.7c1-0.7,4.3-3,4.3-3
-		l0,4.9c0,0.5,0.3,1,0.7,1.2l2.1,1.1c0.5,0.2,1,0.3,1.5,0.4c1.8,0.2,7.6,14.9,7.6,16.9C190,170,182,162.9,169.7,162.9z"/>
+		v4.9c0,0.5,0.3,1,0.7,1.2l2.1,1.1c0.5,0.2,1,0.3,1.5,0.4c1.8,0.2,7.6,14.9,7.6,16.9C190,170,182,162.9,169.7,162.9z"/>
 	<line class="st2" x1="40" y1="82.5" x2="131" y2="82.5"/>
 	<line class="st2" x1="40" y1="100.5" x2="68" y2="100.5"/>
 	<line class="st2" x1="82" y1="100.5" x2="131" y2="100.5"/>

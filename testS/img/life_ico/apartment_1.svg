@@ -3,9 +3,12 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DEAA85;}
-	.st1{fill:#E2B693;}
+	.st0{fill:#424242;}
+	.st1{fill:#330033;}
 </style>
-<path class="st0" d="M126.6,219c-53.4,0-72.3-24-72.3-53.6s17.8-53.5,72.3-53.5c39.9,0,83.4,24,83.4,53.5S166.5,219,126.6,219z"/>
-<path class="st1" d="M141,148c0,52.5-24.4,71-54.5,71S32,201.5,32,148c0-39.2,24.4-82,54.5-82S141,108.7,141,148z"/>
+<rect x="23" y="68" class="st0" width="14" height="104"/>
+<rect x="203" y="91" class="st0" width="14" height="81"/>
+<rect x="34" y="130" class="st0" width="176" height="23"/>
+<circle class="st1" cx="63" cy="108" r="17"/>
+<path class="st1" d="M189,125H88V98.8c0-4.3,3.5-7.8,7.8-7.8h85.3c4.3,0,7.8,3.5,7.8,7.8L189,125L189,125z"/>
 </svg>

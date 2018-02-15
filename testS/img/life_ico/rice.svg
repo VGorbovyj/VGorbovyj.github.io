@@ -3,9 +3,9 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#330033;}
-	.st1{fill:#424242;stroke:#424242;stroke-width:9;stroke-miterlimit:10;}
-	.st2{fill:#424242;}
+	.st0{fill:#DBD7CB;}
+	.st1{fill:#B2BDBF;stroke:#B2BDBF;stroke-width:9;stroke-miterlimit:10;}
+	.st2{fill:#AA6D30;}
 </style>
 <circle class="st0" cx="63.9" cy="122.8" r="10.4"/>
 <circle class="st0" cx="79.3" cy="114" r="10.4"/>
@@ -20,6 +20,6 @@
 <circle class="st0" cx="52.9" cy="136" r="10.4"/>
 <path class="st0" d="M50.2,148.6c0,0,15.4-45.1,75.9-38.5s59.4,7.7,61.6,16.5c2.2,8.8,0,19.8,0,19.8L50.2,148.6z"/>
 <path class="st1" d="M119.5,136.5H37C37,186,77.7,208,77.7,208h41.8h41.8c0,0,40.7-22,40.7-71.5H119.5z"/>
-<rect x="142.6" y="80.6" transform="matrix(0.5489 -0.8359 0.8359 0.5489 10.761 187.806)" class="st2" width="73.5" height="6.6"/>
-<rect x="116.2" y="74.9" transform="matrix(0.3823 -0.924 0.924 0.3823 25.3275 194.3311)" class="st2" width="83.6" height="6.6"/>
+<rect x="142.6" y="80.6" transform="matrix(0.5489 -0.8359 0.8359 0.5489 10.7357 187.7731)" class="st2" width="73.5" height="6.6"/>
+<rect x="116.2" y="74.9" transform="matrix(0.3823 -0.924 0.924 0.3823 25.2952 194.3105)" class="st2" width="83.6" height="6.6"/>
 </svg>
