@@ -28,7 +28,7 @@ img {
 }
 
 .brown-bg {
-	background-color: rgb(51, 0, 51);
+	background-color: #E2C986;
 }
 
 .less-white-bg {
@@ -179,7 +179,7 @@ img {
 .menu-scroll_no a {
 	display: block;
 	font-size: .9em;
-	color: #BC64CC;
+	color: #3F2622;
 	border-bottom: 1px solid rgba(255,255,255, .4);
 	text-transform: uppercase;
 }
