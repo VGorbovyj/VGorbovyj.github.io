@@ -179,7 +179,7 @@ img {
 .menu-scroll_no a {
 	display: block;
 	font-size: .9em;
-	color: rgba(255, 255, 255, .8);
+	color: #BC64CC;
 	border-bottom: 1px solid rgba(255,255,255, .4);
 	text-transform: uppercase;
 }
