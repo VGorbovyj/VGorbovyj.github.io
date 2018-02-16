@@ -4,16 +4,44 @@
 	<meta charset="utf-8">
 	<title>Вища освіта в Україні | Отримання візи</title>
 	<meta name="description" content="Вища освіта в Україні">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css"> 
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="favicon.png">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/scroll.js"></script>
+	
 </head>
-<body>
+<body id="top">
+
+<div class="mobile-menu">
+	<div class="menu-icon">
+		<div class="menu-icon__line-1"></div>
+		<div class="menu-icon__line-2"></div>
+		<div class="menu-icon__line-3"></div>
+	</div>
+	<nav class="mobile-menu-nav">
+		<h1>Menu</h1>
+		<ul class="menu-list">
+			<li class="menu-list__item"><a href="index_ua.html">Головна</a></li>
+			<li class="menu-list__item"><a href="company_ua.html">Про компанію</a></li>
+			<li class="menu-list__item"><a href="visa_ua.html">Отримання візи</a></li>
+			<li>
+				<ul class="col-md-12 menu-scroll home">
+					<li>
+						<a href="#mzs-link">сайт МЗС</a>
+					</li>
+					<li>
+						<a href="#how-to-apply">інструкція подачі заявки</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-list__item"><a href="admission_ua.html">Процедура вступу</a></li>
+			<li class="menu-list__item"><a href="life_ua.html">Життя в Україні</a></li>
+		</ul>
+  </nav>
+</div>
 
 <div class="conteiner-fluid brown-bg nav-row">
 	<div class="container">
@@ -43,7 +71,7 @@
 	</div>
 </div>
 
-<div class="conteiner-fluid white-bg">
+<div class="conteiner-fluid white-bg" id="how-to-apply">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 icons-row">
@@ -53,7 +81,7 @@
 					<ul class="documents-list">
 						<li>Паспорт повинен бути дійсним не менше як 3 місяці після закінчення терміну дії візи та наявність хоча б трьох не заповнених сторінок паспорта.</li>
 						<li>Візову анкету, видрукувану або заповнену друкованими літерами. Вона повинна бути заповнена чітко та зрозуміло, підписана заявником особисто. Безкоштовно завантажити електронну версію візової анкети можна з цього веб-сайту: <a href="http://visa.mfa.gov.ua" target="_blank">http://visa.mfa.gov.ua</a> або отримати паперову версію в Посольстві.</li>
-						<li>Дві кольорові фотокартки на білому тлі (3,5x4,5 см).</li>
+						<li>Дві кольорові фотокартки на білому полотні (3,5x4,5 см).</li>
 						<li>Оригінал свідоцтва про народження та копія, легалізована Міністерством закордонних справ країни видачі.</li>
 						<li>Оригінальне запрошення з найменуванням компанії посередника та її ідентифікаційний номер на зворотній стороні. При отриманні запрошення переконайтеся, що помилок та виправлень немає: ваше ім'я, дата народження, номер паспорта повинні бути ідентичними з відомостями, вказаними у вашому паспорті, який подаєте для отримання візи.</li>
 						<li>Оригінал свідоцтва про завершення середньої школи (коледжу) з описом результатів навчання (стенограма отриманих знаків) та їх копії, легалізовані Міністерством закордонних справ країни видачі.</li>
@@ -63,7 +91,7 @@
 						<li>Оригінал спонсорського листа (засвідченого нотаріально) у формі афідевіта суду, яка повинна включати повне ім'я спонсора, його адресу, номер фіксованого та мобільного телефону, електронну пошту (якщо є), і обов'язок спонсора покрити витрати заявника.</li>
 						<li>Оригінали останніх банківських виписок спонсора (протягом останніх шести місяців); Мінімальна сума повинна бути достатньою для покриття всіх витрат заявника протягом його першого курсу в Україні (оплата навчання та щоденні витрати, загальна сума становить близько 15000 доларів США).</li>
 						<li>Підтвердження оплати візового збору (65 доларів США).</li>
-						<li>Поліс страхування, який діє протягом одного місяця, починаючи з в'їзду на територію України (повинна бути подана тільки після прийняття візового рішення консульським офіцером).</li>
+						<li id="mzs-link">Поліс страхування, який діє протягом одного місяця, починаючи з в'їзду на територію України (повинна бути подана тільки після прийняття візового рішення консульським офіцером).</li>
 					</ul>
 				</div>
 				
@@ -80,8 +108,8 @@
 				<h1 class="col-md-12 row-title">Посилання на сайт МЗС</h1>
 				
 				<div class="col-md-12 docs-links">
-					<p>Інформація для оформлення віз для в’їзду в Україну і транзитного проїзду через її територію (Visa requirements for foreigners entering Ukraine) на сайті Міністерства закордонних справ України: <a href="http://mfa.gov.ua/en/consular-affairs/con/visa" target="_blank">mfa.gov.ua/en/consular-affairs/con/visa</a>.</p>
-					<p id="how-to-apply">Посилання для завантаження - Анкети на отримання візи (visa-application-form): <a href="http://mfa.gov.ua/mediafiles/files/consular-forms/visa-application-form.pdf" target="_blank">mfa.gov.ua/mediafiles/files/consular-forms/visa-application-form.pdf</a>.</p>
+					<p>Інформація для оформлення віз для в’їзду в Україну і транзитного проїзду через її територію на сайті Міністерства закордонних справ України: <a href="http://mfa.gov.ua/en/consular-affairs/con/visa" target="_blank">mfa.gov.ua/en/consular-affairs/con/visa</a>.</p>
+					<p>Посилання для завантаження - Анкети на отримання візи : <a href="http://mfa.gov.ua/mediafiles/files/consular-forms/visa-application-form.pdf" target="_blank">mfa.gov.ua/mediafiles/files/consular-forms/visa-application-form.pdf</a>.</p>
 					<p>Посольства України за кордоном та зони обслуговування: <a href="http://mfa.gov.ua/en/about-mfa/abroad/embassies" target="_blank">mfa.gov.ua/en/about-mfa/abroad/embassies</a></p>
 				</div>
 
@@ -94,17 +122,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 footer">
-				<div class="col-md-4">
+				<div class="col-xs-12 col-md-4">
 					<p><a href="#" class="mega-action" id="mail-button">Розпочни процес!</a></p>
 				</div>
-				<div class="col-md-5">
-					<ul class="contacts">
+				<div class="col-xs-12 col-md-5">
+					<ul class="contacts ua-ask">
 						<li><a href="https://www.facebook.com/NRV.Enterprise/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 						<li><a href="https://api.whatsapp.com/send?phone=380677979145"><i class="fab fa-whatsapp"></i></a></li>
 						<li>pe.nrv.enterprise@gmail.com</li>
 					</ul>
 				</div>
-				<div class="col-md-3 copyright-box">
+				<div class="col-xs-12 col-md-3 copyright-box">
 					<p>Company PE "NRV Enterprise"</p>
 					<p>Copyright © 2017. Всі права захищено.</p>
 					<p>Дизайн і верстка - <a href="https://vgorbovyj.github.io/index.html" target="_blank">Володимир Горбовий</a></p>
@@ -167,6 +195,13 @@ window.onclick = function(event) {
     }
 }
 </script>
+
+<span class="menu-scroll" id="top-magic">
+	<a href="#top"><img src="img/logo_mini.svg" alt="Mini logo"></a></a>
+</span>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 </body>
 </html>
