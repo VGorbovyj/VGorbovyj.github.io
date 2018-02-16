@@ -1278,6 +1278,7 @@ div[class$="line-2"] {
 }
 .main-nav {
 	right: 0;
+	padding-left: 15px;
 }
 .main-nav h1 {
 	width: 100%;
