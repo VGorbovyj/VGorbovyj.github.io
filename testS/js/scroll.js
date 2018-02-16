@@ -6,3 +6,15 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 });
+
+jQuery(function(f){
+    var element = f('#top-magic');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](700);           
+    });
+});
+$('.menu-icon').on('click',function(){
+    $('.mobile-menu-nav').toggleClass('main-nav');
+    $('.menu-icon').toggleClass('menu-magic');
+});
+
