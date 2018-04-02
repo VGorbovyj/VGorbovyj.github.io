@@ -17,7 +17,7 @@ section{padding:60px 0;}
 .contacts{background-color:rgb(165, 192, 91);}
 .section-title{margin-bottom:30px;font-size:3.2em;font-family:'Rajdhani', sans-serif;font-weight:700;}
 .projects .section-title{color:rgb(153, 178, 83);text-shadow:0 1px 1px rgba(22,22,22, .8);}
-header{height:100%;background-image:url(../img/bg.png);-webkit-background-size:cover;background-size:cover;}
+header{height:100%;background-image:url(../img/bg.png);-webkit-background-size:cover;background-size:cover;background-position: 60% 40%;}
 .navigation-list{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;font-family:'Open Sans', sans-serif;position:relative;}
 .navigation-list__item{display:block;text-align:center;}
 .navigation-list__item a{font-size:1.6rem;display:block;padding:15px 8px;color:#fff;text-decoration:none;text-shadow:0 1px 1px rgba(22,22,22, .8);font-weight:700;}
