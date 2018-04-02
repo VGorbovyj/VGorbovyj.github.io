@@ -120,6 +120,7 @@ img[alt*="two"]{width:23px;height:29px;}
 .experience-box{-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;-o-flex-direction:column;flex-direction:column;}
 .experience-ico{order:1;}
 .experience-info{order:2;}
+.project-caption{display: none;}
 .contacts-box{-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;-o-flex-direction:column;flex-direction:column;}
 }
 @media screen and (min-width:620px) and (max-width:1023px){header{background-image:url(../img/bg-min.png);}
