@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="uk"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="uk"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<!--<![endif]-->
+<html lang="uk">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no" />
+<title>Молодь за здоровий спосіб життя</title>
+<link href="css/img/vgorbovyj.png" rel="icon">
+<link href="css/normalize.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+    <header class="intro">
+        
+        <h1 class="intro__headling">Вибір</h1>
+        <section class="intro__logo">
+            <img src="css/img/left-arrow.svg" class="intro__logo__part">
+            <img src="css/img/face.svg" class="intro__logo__part">
+            <img src="css/img/right-arrow.svg" class="intro__logo__part">
+        </section>
+        
+        <section class="intro__text">
+            <p class="intro__text__paragraph">Кожна наша дія має певний наслідок, і залежно від того, який ми зробимо <b>вибір</b>, таким і буде результат. Та не завжди у нас є шанс змінити свій вибір, інколи, буває вже запізно.</p>
+            <p class="intro__text__paragraph">Уявімо, що зараз ми створюємо персонажа комп'ютерної гри, обравши звички, які властиві вам. За кожну звичку<small>(під кожною з яких зображено, яким органам вони шкодять / покращують, відповідно до способу життя)</small> будуть відніматись або ж додаватись очки здоров'я. Подивимось, хто набере більше!?</p>
+        </section>
+        
+    </header>
+    
+    <main>
+        
+        <header class="game-panel">
+            
+            <div class="game-panel__player">
+                <img src="css/img/face.svg" class="game-panel__player__avatar">
+                <input placeholder="Ваш нікнейм"  maxlength="20" class="game-panel__player__nickname">
+            </div>
+
+            <section class="player-panel__hp">
+                <div class="player-panel__hp__block">
+                    <div class="hp-item-1">
+                    </div>
+                    <div class="hp-item-2">
+                    </div>
+                    <div class="hp-item-3">
+                    </div>
+                    <div class="hp-item-4">
+                    </div>
+                    <div class="extra-hp-item-1">
+                    </div>
+                    <div class="extra-hp-item-2">
+                    </div>
+                    <div class="extra-hp-item-3">
+                    </div>
+                    <div class="extra-hp-item-4">
+                    </div>
+                    <div class="death-icon">
+                        R.I.P.
+                    </div> 
+                </div>
+                <h1>Здоров'я</h1>
+            </section>
+
+        </header>
+        
+        <div class="game">
+            
+            <div class="game__left-side">
+                
+                <h1 class="game__left-side__branch">Шкідливий спосіб життя</h1>
+                
+                <div class="abillity">
+                    
+                    <section class="abillity__description">
+                        <p>Забруднене середовище</p>
+                        <div class="abillity__description__damage">
+                            <img src="css/img/brain.svg">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/lungs.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__bad-environment" data-info="icon-link">
+                            <img src="css/img/atomic-s.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Куріння</p>
+                        <div class="abillity__description__damage">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/lungs.svg">
+                            <img src="css/img/throat.svg">
+                            <img src="css/img/kidney.svg">
+                            <img src="css/img/tooth.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__smoking" data-info="icon-link">
+                            <img src="css/img/smoke.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Алкогольні напої</p>
+                        <div class="abillity__description__damage">
+                            <img src="css/img/brain.svg">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/nervous_system.svg">
+                            <img src="css/img/liver.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__alcohol" data-info="icon-link">
+                            <img src="css/img/drink.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Наркотичні речовини</p>
+                        <div class="abillity__description__damage">
+                            <img src="css/img/brain.svg">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/nervous_system.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__drugs" data-info="icon-link">
+                            <img src="css/img/drugs.svg">
+                        </a>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="game__center">
+                <div class="game__center__human-body">
+                </div>
+            </div>
+
+            <div class="game__right-side">
+                
+                <h1 class="game__right-side__branch">Здоровий спосіб життя</h1>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Прогулянки в парках і лісах</p>
+                        <div class="abillity__description__heal">
+                            <img src="css/img/brain.svg">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/lungs.svg">
+                            <img src="css/img/nervous_system.svg">
+                            <img src="css/img/power.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__good-environment" data-info="icon-link">
+                            <img src="css/img/threes.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Збалансоване та раціональне харчування</p>
+                        <div class="abillity__description__heal">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/power.svg">
+                            <img src="css/img/kidney.svg">
+                            <img src="css/img/liver.svg">
+                            <img src="css/img/stomach.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__nutrition" data-info="icon-link">
+                            <img src="css/img/balance.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Спорт, розумова та фізична активність</p>
+                        <div class="abillity__description__heal">
+                            <img src="css/img/heart.svg">
+                            <img src="css/img/power.svg">
+                            <img src="css/img/brain.svg">
+                            <img src="css/img/nervous_system.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__sport" data-info="icon-link">
+                            <img src="css/img/sport.svg">
+                        </a>
+                    </section>
+                </div>
+                
+                <div class="abillity">
+                    <section class="abillity__description">
+                        <p>Дотримання гігієни</p>
+                        <div class="abillity__description__heal">
+                            <img src="css/img/tooth.svg">
+                            <img src="css/img/power.svg">
+                            <img src="css/img/stomach.svg">
+                        </div>
+                    </section>
+                    <section class="abillity__icon">
+                        <a class="abillity__icon-link__hygiene" data-info="icon-link">
+                            <img src="css/img/hygiene.svg">
+                        </a>
+                    </section>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer class="past-text">
+        <h1 class="past-text__end">Не дайте собі зникнути. Обирайте здоровий спосіб життя!</h1>
+        <section class="past-text__last">
+            <p class="past-text__last__paragraph">Як у цій грі, так і в нашому житті - <span>обираючи шкідливу звичку - ми втрачаємо здоров'я</span>.</p>
+            <p class="past-text__last__paragraph">P.s. Ну, що? Хто скільки набрав? Вводьте свої нікнейми, робіть скрішоти і діліться ними у соціальних мережах із хештегом вибір - <span>#вибір</span>.</p>
+        </section>
+        <section class="past-text__info">
+            <a href="https://vgorbovyj.github.io" class="author">Володимир Горбовий</a>
+            <a href="https://rabota.ua/cv/9759129"><img src="css/img/vgorbovyj_white.svg"></a>
+        </section>
+    </footer>
+    
+<div class="menus">
+    <section class="player-panel__hp">
+        <div class="player-panel__hp__block">
+            <div class="hp-item-1">
+            </div>
+            <div class="hp-item-2">
+            </div>
+            <div class="hp-item-3">
+            </div>
+            <div class="hp-item-4">
+            </div>
+            <div class="extra-hp-item-1">
+            </div>
+            <div class="extra-hp-item-2">
+            </div>
+            <div class="extra-hp-item-3">
+            </div>
+            <div class="extra-hp-item-4">
+            </div>
+            <div class="death-icon">
+                R.I.P.
+            </div> 
+        </div>
+        <h1>Здоров'я</h1>
+    </section>
+</div>
+    
+<script>
+jQuery(function(f){
+    var element = f('.menus');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 850 ? 'In': 'Out')](500);          
+    });
+});
+</script>
+<script type="text/javascript" src="js/engine.js"></script>
+    
+</body>
+</html>
