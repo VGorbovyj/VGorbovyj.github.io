@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<meta charset=utf-8>
+<title>Team Vikings | Головна</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="shortcut icon" href="favicon_32x32.png" />
+<link rel="icon" href="favicon_32x32.png" sizes="32x32" />
+<script src="js/html5shiv.min.js"></script>
+
+<link href="css/bootstrap-grid-3.3.1.min.css" rel="stylesheet" />
+<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="sass/main2.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&amp;subset=cyrillic-ext" rel="stylesheet">
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</head>
+<body style="background-image: url(img/work/bgi.jpg); background-size: cover">
+
+<header class="container-fluid headerAbsolute">
+	<div class="row">
+		<div class="col-md-12 main-menu">
+			<nav class="navigation">
+				<a href="about.html" class="navigation__item" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)">Проект</a>
+				<a href="team.html" class="navigation__item" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)">Команда</a>
+				<a href="matches.html" class="navigation__item" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)">Матчі</a>
+				<a href="index.html" class="navigation__item" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)">Головна</a>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<main class="container-fluid content">
+	<div class="row">
+		<div class="col-md-12 homePage" style="background: transparent;">
+			<div class="col-md-6 homePage__side">
+				<h1 class="matches__title" style="padding-top: 10px; width: 100%">Матчі</h1>
+				<ul class="match__block col-md-12">
+					<li class="left-team-logo">
+						<img src="img/teamLogos/TM.png" alt="">
+					</li>
+					<li class="left-team-name">
+						TM
+					</li>
+					<li class="left-team-score">
+						0
+					</li>
+					<li class="tournament-logo">
+						<img src="img/tournamentLogos/dreamleague.jpg" alt="">
+					</li>
+					<li class="right-team-score">
+						0
+					</li>
+					<li class="right-team-name">
+						OG
+					</li>
+					<li class="right-team-logo">
+						<img src="img/teamLogos/OG.png" alt="">
+					</li>
+					<li class="match__info">
+						<ul class="match__info-list">
+							<li class="match-time">16:30</li>
+							<li class="match-date">22.12.17</li>
+							<li class="match-status online-stream">LIVE</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul class="match__block col-md-12">
+					<li class="left-team-logo">
+						<img src="img/teamLogos/TM.png" alt="">
+					</li>
+					<li class="left-team-name">
+						TM
+					</li>
+					<li class="left-team-score win">
+						2
+					</li>
+					<li class="tournament-logo">
+						<img src="img/tournamentLogos/dreamleague.jpg" alt="">
+					</li>
+					<li class="right-team-score loose">
+						1
+					</li>
+					<li class="right-team-name">
+						OG
+					</li>
+					<li class="right-team-logo">
+						<img src="img/teamLogos/OG.png" alt="">
+					</li>
+					<li class="match__info">
+						<ul class="match__info-list">
+							<li class="match-time">16:30</li>
+							<li class="match-date">22.12.17</li>
+							<li class="match-status offline-stream">O / N</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="match__block col-md-12">
+					<li class="left-team-logo">
+						<img src="img/teamLogos/TM.png" alt="">
+					</li>
+					<li class="left-team-name">
+						TM
+					</li>
+					<li class="left-team-score loose">
+						1
+					</li>
+					<li class="tournament-logo">
+						<img src="img/tournamentLogos/dreamleague.jpg" alt="">
+					</li>
+					<li class="right-team-score win">
+						3
+					</li>
+					<li class="right-team-name">
+						OG
+					</li>
+					<li class="right-team-logo">
+						<img src="img/teamLogos/OG.png" alt="">
+					</li>
+					<li class="match__info">
+						<ul class="match__info-list">
+							<li class="match-time">16:30</li>
+							<li class="match-date">22.12.17</li>
+							<li class="match-status offline-stream">O / N</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="match__block col-md-12">
+					 <!-- Trigger/Open The Modal -->
+					<button id="myBtn">Домовитись про матч</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span class="close">&times;</span>
+					    <form action="#">
+								<label for="name">Тег команди</label>
+								<input name="firstname" type="text" id="name">
+								<label for="email">Email</label>
+								<input name="email" type="email" id="email">
+								<label for="date">Час</label>
+								<input name="date" type="date" id="date">
+								<input type="submit" value="Надіслати">
+							</form>
+					  </div>
+
+					</div> 
+				</ul>
+
+				<ul class="rightsNsocial">
+					<li style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)">© 2017 Team Vikings.</li>
+					<li><a href="" class="fa fa-facebook-official" aria-hidden="true" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)"></a></li>
+					<li><a href="" class="fa fa-twitter" aria-hidden="true" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)"></a></li>
+					<li><a href="" class="fa fa-youtube-play" aria-hidden="true" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)"></a></li>
+					<li><a href="" class="fa fa-twitch" aria-hidden="true" style="color: #fff; text-shadow: 0 1px 1px rgba(0,0,0, .8)"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 twitch__block">
+				<h1 class="matches__title">Стрім</h1>
+				<iframe src="https://player.twitch.tv/?channel=dreamleague" allowfullscreen="true" scrolling="no"></iframe>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
