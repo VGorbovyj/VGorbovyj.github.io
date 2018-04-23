@@ -530,8 +530,8 @@ a {
 }
 
 .text .set_icons .set_box img[alt^="Skill"] {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   margin-right: 8px;
 }
 
@@ -540,7 +540,7 @@ a {
 }
 
 .text .set_icons .set_box img[alt^="Skill"]:nth-child(-n+2) {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .text img[alt="Emoticon"] {
