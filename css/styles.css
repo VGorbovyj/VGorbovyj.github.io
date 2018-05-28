@@ -115,7 +115,7 @@ header{height:100%;background-image:url(../img/bg.png);-webkit-background-size:c
 .navigation-list__item a:first-of-type{display:none;}
 .navigation-list__item a:last-of-type{display:inline-block;}
 .navigation-list__item a img{width:16px;}
-.info-box{margin-top:60px;padding:5px 10px;}
+.info-box{margin-top:25px;padding:5px 10px;}
 .info-box__name span{font-size:4rem;}
 .logo-box__img{margin-left:20%;}
 .logo-box::after{margin-left:30%;}
