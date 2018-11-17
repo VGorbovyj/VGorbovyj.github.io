@@ -96,6 +96,9 @@ header{height:100%;background-image:url(../img/bg.png);-webkit-background-size:c
 .contacts-item:hover .contacts-item__link span:nth-of-type(4){bottom:0;left:0;}
 .copyright{width:100%;padding:15px 0;text-align:center;text-transform:uppercase;font-family:'Rajdhani', sans-serif;font-weight:400;font-size:1.2em;background-color:rgb(153, 178, 83);}
 .copyright p{margin:0;}
+.instagram{text-align:center;color: rgb(22,22,22,.6);font-size:1.4em;margin-top:45px;text-shadow:none}
+.instagram a{color: rgba(22,22,22, .8);text-decoration: none;border-bottom:2px solid rgba(165, 192, 91, 0);}
+.instagram a:hover{border-color:rgb(165, 192, 91);border-color: rgba(165, 192, 91, 1);}
 .faded-text{color:rgba(255,255,255, .8);}
 .more-projects{display:flex;flex-flow:row wrap;align-items:center;}
 .six-flow{display:flex;flex-flow:row wrap;}
